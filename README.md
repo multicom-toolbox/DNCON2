@@ -1,6 +1,12 @@
 # DNCON2
 Deep convolutional neural networks for protein contact map prediction
 
+Test Environment
+--------------------------------------------------------------------------------------
+64-bit PC - Ubuntu 16.04 LTS
+
+Steps for installing DNCON2
+--------------------------------------------------------------------------------------
 (A) Download all databases
 cd ~
 mkdir databases
