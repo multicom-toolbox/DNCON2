@@ -5,7 +5,7 @@ Test Environment
 --------------------------------------------------------------------------------------
 64-bit PC - Ubuntu 16.04 LTS
 
-Program, Scripts, and Database dependency in DNCON2
+Programs, Scripts, and Databases dependency in DNCON2
 --------------------------------------------------------------------------------------
 ![Programs, Scripts, and Databases dependency in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dependency.PNG)
 
