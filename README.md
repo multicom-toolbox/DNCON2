@@ -1,6 +1,6 @@
 # DNCON2
 Deep convolutional neural networks for protein contact map prediction
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Program, Scripts, and Database dependency in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dataflow.PNG)
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Data Flow in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dataflow.PNG)
