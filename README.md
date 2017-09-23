@@ -172,7 +172,7 @@ cp ./metapsicov/examples/5ptpA.fasta ~/
 ```
 Check the expected output files '5ptpA.ss2', '5ptpA.horiz', and '5ptpA.solv'.
 
-**(H) Install HHblits, JackHMMER, and test 'generate-alignments.pl'**  
+**(G) Install HHblits, JackHMMER, and test 'generate-alignments.pl'**  
 ```
 sudo apt install hhsuite
 wget http://eddylab.org/software/hmmer3/3.1b2/hmmer-3.1b2-linux-intel-x86_64.tar.gz
@@ -191,7 +191,7 @@ csh
 exit
 ```
 
-**(I) Configure DNCON2 scripts**  
+**(H) Configure DNCON2 scripts**  
 
 (a) Update the following variables in the script 'run-ccmpred-freecontact-psicov.pl'
 ```
@@ -227,7 +227,7 @@ wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.25/ncbi-blast-2.2.2
 tar zxvf ncbi-blast-2.2.25+-x64-linux.tar.gz 
 ```
 
-**(J)  Verify DNCON2 scripts**
+**(I)  Verify DNCON2 scripts**
 
 (a) Verify the script 'run-ccmpred-freecontact-psicov.pl'
 ```
