@@ -7,19 +7,20 @@ Test Environment
 
 Steps for installing DNCON2
 --------------------------------------------------------------------------------------
-(A) Download all databases  
+**(A) Download all databases**  
 ```
-$ cd ~  
-$ mkdir databases  
-$ cd databases/  
-$ wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/nr90-2012.tar.gz  
-$ tar -zxvf nr90-2012.tar.gz  
-$ wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniref.tar.gz  
-$ tar -zxvf uniref.tar.gz  
-$ wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniprot20_2016_02.tar.gz  
-$ tar zxvf uniprot20_2016_02.tar.gz  
+cd ~  
+mkdir databases  
+cd databases/  
+wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/nr90-2012.tar.gz  
+tar -zxvf nr90-2012.tar.gz  
+wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniref.tar.gz  
+tar -zxvf uniref.tar.gz  
+wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniprot20_2016_02.tar.gz  
+tar zxvf uniprot20_2016_02.tar.gz  
 ```
-(B) Install runpsipredandsolv
+
+**(B) Install runpsipredandsolv**  
 
 (a) Install PSIPRED
 ```
@@ -54,23 +55,33 @@ set datadir = /home/badri/psipred/data/
 set datadir2 = /home/badri/metapsicov/data/
 ```
 
-(C) (OPTIONAL) Test 'runpsipredandsolv' installation:
+**(C) (OPTIONAL) Test 'runpsipredandsolv' installation:**  
+```
 cd ~
 cp ./metapsicov/examples/5ptpA.fasta ~/
 ./metapsicov/runpsipredandsolv 5ptpA.fasta
+```
 [Expected output files 5ptpA.ss2 5ptpA.horiz 5ptpA.solv]
 
-(D) Install Tensorflow, Keras, and h5py and Update keras.json
+**(D) Install Tensorflow, Keras, and h5py and Update keras.json**
 
-(D1) Install Tensorflow: 
+(a) Install Tensorflow: 
+```
 $ sudo pip install tensorflow
+```
 GPU version is NOT needed. If you face issues, refer to the the tensor flow installation guide at https://www.tensorflow.org/install/install_linux.
 
-(D2) Install Keras: $ sudo pip install keras
+(b) Install Keras:
+```
+$ sudo pip install keras
+```
+(c) Install the h5py library:  
+```
+$ sudo pip install python-h5py
+```
 
-(D3) Install the h5py library: $ sudo pip install python-h5py
-
-(D4) Add the entry [“image_dim_ordering": "tf”,] to your keras..json file at ~/.keras/keras.json. After the update, your keras.json should look like the one below:
+(d) Add the entry [“image_dim_ordering": "tf”,] to your keras..json file at ~/.keras/keras.json. After the update, your keras.json should look like the one below:  
+```
 {
     "epsilon": 1e-07,
     "floatx": "float32",
@@ -78,7 +89,7 @@ GPU version is NOT needed. If you face issues, refer to the the tensor flow inst
     "image_data_format": "channels_last",
     "backend": "tensorflow"
 }
-
+```
 (E) [OPTIONAL] Verify the installation of Tensorflow, Keras, and hp5y
 
 The script ‘predict-rr-from-features.sh’ takes a feature file as input and predicts contacts using the trained CNN models. Using an existing feature file (feat-3e7u.txt) and a name for output RR file and intermediate stage2 feature file, test the installation of Tensorflow, Keras, and hp5y using the following command:
