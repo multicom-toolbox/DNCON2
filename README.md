@@ -11,9 +11,9 @@ Programs, Scripts, and Databases dependency in DNCON2
 
 Installation Notes
 --------------------------------------------------------------------------------------
-- The primary reason for testing our system in Ubuntu is becasue the tool 'FreeContact' is easier to install in a Debian system. If you would like to install DNCON2 in some other operating systems, first test if 'FreeContact' can be installed in it. If, for some reason, you do not have a Ubuntu machine, and cannot install FreeContact, with just a few code updates you should get the results with just slightly lesser precision.
-- Updated versions of Databases and Programs 'may' generate results, but we recommend initial installation with the versions suggested. We haven't rigorously tested new versions of third-party programs and newer databases.
-- Since these installation steps are for a 64-bit machine, some installing some of the programs, your links may be different.
+- The primary reason for testing our system in Ubuntu is becasue the tool 'FreeContact' is easier to install in a Debian system. If you would like to install DNCON2 in some other operating systems, first test if 'FreeContact' can be installed in it. If, for some reason, you do not have a Ubuntu machine, and cannot install FreeContact, with just a few code updates you can skip using the too. You will get just slightly less precise results.
+- Updated versions of Databases and Programs 'may' generate better results, but we recommend initial installation with the versions suggested here. We haven't rigorously tested new versions of third-party programs and newer databases.
+- Since these installation steps are for a 64-bit machine, for installing some of the programs, your links may be different. Please refer to appropriate third-party websites.
 - For verifying your installation, use the results in the scripts and outputs in the dry-run directory. In the dry-run directory we provide input, output, and log files of DNCON2 execution for three sequences - 3e7u, T0866, and T0900.
 
 Data Flow in DNCON2
@@ -75,22 +75,22 @@ freecontact < ./CCMpred/example/1atzA.aln > ~/test-dncon2/freecontact.rr
 
 **(D) Install Tensorflow, Keras, and h5py and Update keras.json**  
 
-(i) Install Tensorflow: 
+(a) Install Tensorflow: 
 ```
 sudo pip install tensorflow
 ```
 GPU version is NOT needed. If you face issues, refer to the the tensor flow installation guide at https://www.tensorflow.org/install/install_linux.
 
-(ii) Install Keras:
+(b) Install Keras:
 ```
 sudo pip install keras
 ```
-(iii) Install the h5py library:  
+(c) Install the h5py library:  
 ```
 sudo pip install python-h5py
 ```
 
-(iii) Add the entry [“image_dim_ordering": "tf”,] to your keras..json file at ~/.keras/keras.json. After the update, your keras.json should look like the one below:  
+(d) Add the entry [“image_dim_ordering": "tf”,] to your keras..json file at ~/.keras/keras.json. After the update, your keras.json should look like the one below:  
 ```
 {
     "epsilon": 1e-07,
@@ -117,7 +117,7 @@ wget http://download.igb.uci.edu/SCRATCH-1D_1.1.tar.gz
 tar zxvf SCRATCH-1D_1.1.tar.gz
 cd SCRATCH-1D_1.1/
 perl install.pl
-# Replace the 32-bit blast with 64-bit version (if needed)
+// Replace the 32-bit blast with 64-bit version (if needed)
 mv ./pkg/blast-2.2.26 ./pkg/blast-2.2.26.original
 cp -r ~/blast-2.2.26 ./pkg/ (64-bit Legacy Blast is already installed)
 ```
@@ -131,18 +131,18 @@ cd doc
 
 **(F) Install Legacy Blast, PSIPRED, and runpsipredandsolv (MetaPSICOV)**  
 
-(i) Install PSIPRED
+(a) Install PSIPRED
 ```
 cd ~
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/psipred/old_versions/psipred3.5.tar.gz
 tar zxvf psipred3.5.tar.gz
 ```
-(ii) Install Legacy Blast
+(b) Install Legacy Blast
 ```
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/legacy/2.2.26/blast-2.2.26-x64-linux.tar.gz
 tar -zxvf blast-2.2.26-x64-linux.tar.gz
 ```
-(iii) Install MetaPSICOV
+(c) Install MetaPSICOV
 ```
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/MetaPSICOV/metapsicov.tar.gz
 tar -zxvf metapsicov.tar.gz
@@ -150,11 +150,11 @@ cd src
 make
 make install
 ```
-(iv) Install 'tcsh'
+(d) Install 'tcsh'
 ```
 sudo apt-get install tcsh (below requires it)
 ```
-(v) Update the following paths in 'runpsipredandsolv'
+(e) Update the following paths in 'runpsipredandsolv'
 ```
 set dbname = /home/badri/databases/uniref/uniref90pfilt
 set ncbidir = /home/badri/blast-2.2.26/bin
@@ -172,7 +172,7 @@ cp ./metapsicov/examples/5ptpA.fasta ~/
 ```
 Check the expected output files '5ptpA.ss2', '5ptpA.horiz', and '5ptpA.solv'.
 
-**(J) Install HHblits, JackHMMER, and test 'generate-alignments.pl'**  
+**(H) Install HHblits, JackHMMER, and test 'generate-alignments.pl'**  
 ```
 sudo apt install hhsuite
 wget http://eddylab.org/software/hmmer3/3.1b2/hmmer-3.1b2-linux-intel-x86_64.tar.gz
@@ -191,7 +191,7 @@ csh
 exit
 ```
 
-**(H) Configure DNCON2 scripts**  
+**(I) Configure DNCON2 scripts**  
 
 (a) Update the following variables in the script 'run-ccmpred-freecontact-psicov.pl'
 ```
@@ -227,17 +227,28 @@ wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.25/ncbi-blast-2.2.2
 tar zxvf ncbi-blast-2.2.25+-x64-linux.tar.gz 
 ```
 
-**(I) [OPTIONAL] Verify DNCON2 intermediate scripts**
-```
-./DNCON2/scripts/run-ccmpred-freecontact-psicov.pl ./DNCON2/dry-run/3e7u/alignments/3e7u.aln ~/temp-out-psicov ~/temp-out-ccmpred ~/temp-out-freecontact
+**(J)  Verify DNCON2 scripts**
 
-./DNCON2/scripts/generate-alignments.pl ./DNCON2/dry-run/T0900.fasta ~/temp-T0900-alignments/
-
-./DNCON2/dncon2-v1.0.sh ./DNCON2/dry-run/3e7u.fasta test-dncon2-3e7u
-```
-
-**(xxx) Verify Keras, Tensorflow, and CNN configuration**
+(a) Verify the script 'run-ccmpred-freecontact-psicov.pl'
 ```
 cd ~
-./DNCON2/scripts/predict-rr-from-features.sh ./DNCON2/dry-run/3e7u/feat-3e7u.txt ./3e7u.rr ./3e7u-stg2-feat.txt 
+./DNCON2/scripts/run-ccmpred-freecontact-psicov.pl ./DNCON2/dry-run/output/3e7u/alignments/3e7u.aln ./test-dncon2/temp-out-psicov ./test-dncon2/temp-out-ccmpred ./test-dncon2/temp-out-freecontact
 ```
+Compare these outputs with the outputs at './DNCON2/dry-run/output/3e7u/'.
+
+(b) Verify the script 'generate-alignments.pl'
+```
+cd ~
+./DNCON2/scripts/generate-alignments.pl ./DNCON2/dry-run/input/T0900.fasta ./test-dncon2/temp-T0900-alignments/
+```
+Compare these outputs with the outputs at './DNCON2/dry-run/output/T0900/'.
+
+(c) Verify DNCON2 installation
+```
+cd ~/DNCON2/dry-run/
+./run-3e7u.sh
+./run-T0866.sh
+./run-T0900.sh
+./evaluate-runs.sh
+```
+Compare the evaluations with the outputs and logs at './DNCON2/dry-run/output' and './DNCON2/dry-run/results.txt'.
