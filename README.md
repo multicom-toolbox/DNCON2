@@ -7,7 +7,7 @@ Test Environment
 
 Program, Scripts, and Database dependency in DNCON2
 --------------------------------------------------------------------------------------
-![Program, Scripts, and Database dependency in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dependency.PNG)
+![Programs, Scripts, and Databases dependency in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dependency.PNG)
 
 Data Flow in DNCON2
 --------------------------------------------------------------------------------------
