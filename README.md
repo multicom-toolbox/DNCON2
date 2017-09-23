@@ -8,43 +8,51 @@ Test Environment
 Steps for installing DNCON2
 --------------------------------------------------------------------------------------
 (A) Download all databases  
-	cd ~  
-	mkdir databases  
-	cd databases/  
-	wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/nr90-2012.tar.gz  
-	tar -zxvf nr90-2012.tar.gz  
-	wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniref.tar.gz  
-	tar -zxvf uniref.tar.gz  
-	wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniprot20_2016_02.tar.gz  
-	tar zxvf uniprot20_2016_02.tar.gz  
-
+```
+$ cd ~  
+$ mkdir databases  
+$ cd databases/  
+$ wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/nr90-2012.tar.gz  
+$ tar -zxvf nr90-2012.tar.gz  
+$ wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniref.tar.gz  
+$ tar -zxvf uniref.tar.gz  
+$ wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniprot20_2016_02.tar.gz  
+$ tar zxvf uniprot20_2016_02.tar.gz  
+```
 (B) Install runpsipredandsolv
-(B1) Install PSIPRED
+
+(a) Install PSIPRED
+```
 cd ~
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/psipred/old_versions/psipred3.5.tar.gz
 tar zxvf psipred3.5.tar.gz
-
-(B2) Install Legacy Blast
+```
+(b) Install Legacy Blast
+```
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/legacy/2.2.26/blast-2.2.26-x64-linux.tar.gz
 tar -zxvf blast-2.2.26-x64-linux.tar.gz
-
-(B3) Install MetaPSICOV
+```
+(a) Install MetaPSICOV
+```
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/MetaPSICOV/metapsicov.tar.gz
 tar -zxvf metapsicov.tar.gz
 cd src
 make
 make install
-
-(B4) Install 'tcsh'
+```
+(d) Install 'tcsh'
+```
 sudo apt-get install tcsh (below requires it)
-
-(B5) Update the following paths in 'runpsipredandsolv'
+```
+(e) Update the following paths in 'runpsipredandsolv'
+```
 set dbname = /home/badri/databases/uniref/uniref90pfilt
 set ncbidir = /home/badri/blast-2.2.26/bin
 set execdir = /home/badri/psipred/bin/
 set execdir2 = /home/badri/metapsicov/bin/
 set datadir = /home/badri/psipred/data/ 
 set datadir2 = /home/badri/metapsicov/data/
+```
 
 (C) (OPTIONAL) Test 'runpsipredandsolv' installation:
 cd ~
