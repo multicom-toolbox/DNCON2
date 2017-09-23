@@ -6,6 +6,15 @@ Test Environment
 --------------------------------------------------------------------------------------
 64-bit PC - Ubuntu 16.04 LTS
 
+Program, Scripts, and Database dependency in DNCON2
+--------------------------------------------------------------------------------------
+![Program, Scripts, and Database dependency in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dependency.PNG)
+
+Data Flow in DNCON2
+--------------------------------------------------------------------------------------
+![Data Flow in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dataflow.PNG)
+
+
 Steps for installing DNCON2
 --------------------------------------------------------------------------------------
 **(A) Download all databases**  
@@ -220,8 +229,3 @@ tar zxvf ncbi-blast-2.2.25+-x64-linux.tar.gz
 cd ~
 ./DNCON2/scripts/predict-rr-from-features.sh ./DNCON2/dry-run/3e7u/feat-3e7u.txt ./3e7u.rr ./3e7u-stg2-feat.txt 
 ```
-
-
-![Program, Scripts, and Database dependency in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dependency.PNG)
-
-![Data Flow in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dataflow.PNG)
