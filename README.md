@@ -11,7 +11,7 @@ Programs, Scripts, and Databases dependency in DNCON2
 
 Installation Notes
 --------------------------------------------------------------------------------------
-- The primary reason for testing our system in Ubuntu is becasue the tool 'FreeContact' is easier to install in a Debian system. If you would like to install DNCON2 in some other operating systems, first test if 'FreeContact' can be installed in it. If, for some reason, you do not have a Ubuntu machine, and cannot install FreeContact, with just a few code updates you can skip using the too. You will get just slightly less precise results.
+- We tested in Ubuntu becasue the tool 'FreeContact' is easier to install in a Debian system. If you would like to install DNCON2 in some other operating systems, first test if 'FreeContact' can be installed in it. If, for some reason, you do not have a Ubuntu machine, and cannot install FreeContact, you can still use DNCON2. With just a few code updates you can skip using the FreeContact. You will get slightly less precise results.
 - Updated versions of Databases and Programs 'may' generate better results, but we recommend initial installation with the versions suggested here. We haven't rigorously tested new versions of third-party programs and newer databases.
 - Since these installation steps are for a 64-bit machine, for installing some of the programs, your links may be different. Please refer to appropriate third-party websites.
 - For verifying your installation, use the results in the scripts and outputs in the dry-run directory. In the dry-run directory we provide input, output, and log files of DNCON2 execution for three sequences - 3e7u, T0866, and T0900.
