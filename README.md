@@ -16,7 +16,7 @@ Data Flow in DNCON2
 
 Steps for installing DNCON2
 --------------------------------------------------------------------------------------
-**(A) Download all databases**  
+1. Download all databases  
 ```
 cd ~  
 mkdir databases  
@@ -29,15 +29,15 @@ wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniprot2
 tar zxvf uniprot20_2016_02.tar.gz  
 ```
 
-**(B) Install runpsipredandsolv**  
+1. Install runpsipredandsolv  
 
-(a) Install PSIPRED
+(i) Install PSIPRED
 ```
 cd ~
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/psipred/old_versions/psipred3.5.tar.gz
 tar zxvf psipred3.5.tar.gz
 ```
-(b) Install Legacy Blast
+(i) Install Legacy Blast
 ```
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/legacy/2.2.26/blast-2.2.26-x64-linux.tar.gz
 tar -zxvf blast-2.2.26-x64-linux.tar.gz
