@@ -8,15 +8,15 @@ Test Environment
 Steps for installing DNCON2
 --------------------------------------------------------------------------------------
 (A) Download all databases  
-cd ~  
-mkdir databases  
-cd databases/  
-wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/nr90-2012.tar.gz
-tar -zxvf nr90-2012.tar.gz
-wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniref.tar.gz
-tar -zxvf uniref.tar.gz 
-wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniprot20_2016_02.tar.gz 
-tar zxvf uniprot20_2016_02.tar.gz 
+	cd ~  
+	mkdir databases  
+	cd databases/  
+	wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/nr90-2012.tar.gz  
+	tar -zxvf nr90-2012.tar.gz  
+	wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniref.tar.gz  
+	tar -zxvf uniref.tar.gz  
+	wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniprot20_2016_02.tar.gz  
+	tar zxvf uniprot20_2016_02.tar.gz  
 
 (B) Install runpsipredandsolv
 (B1) Install PSIPRED
