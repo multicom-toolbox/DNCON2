@@ -27,30 +27,33 @@ Steps for installing DNCON2
 
 **(A) Download and Unzip DNCON2 package**
 ```
+cd ~
+mkdir DNCON2
+cd DNCON2/
 wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/DNCON2.tar.gz
 tar zxvf DNCON2.tar.gz
 ```
 
 **(B) Download and Unzip all databases**  
 ```
-cd ~  
+cd ~/DNCON2/  
 mkdir databases  
 cd databases/  
 wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/nr90-2012.tar.gz  
-tar -zxvf nr90-2012.tar.gz  
+tar zxvf nr90-2012.tar.gz  
 wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniref.tar.gz  
-tar -zxvf uniref.tar.gz  
+tar zxvf uniref.tar.gz  
 wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/databases/uniprot20_2016_02.tar.gz  
 tar zxvf uniprot20_2016_02.tar.gz  
 ```
 
 **(C) Install FreeContact, PSICOV, and CCMpred**  
 ```
-cd ~
+cd ~/DNCON2/
 sudo apt-get install freecontact
 ```
 ```
-cd ~
+cd ~/DNCON2/
 mkdir psicov
 cd psicov/
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/PSICOV/psicov2.c
@@ -58,7 +61,7 @@ wget http://bioinfadmin.cs.ucl.ac.uk/downloads/PSICOV/Makefile
 make
 ```
 ```
-cd ~
+cd ~/DNCON2/
 sudo apt install git
 sudo apt install cmake
 git clone --recursive https://github.com/soedinglab/CCMpred.git
@@ -69,9 +72,9 @@ make
 
 **[OPTIONAL] Verify FreeContact, PSICOV, and CCMpred Installation**  
 ```
-./CCMpred/bin/ccmpred ./CCMpred/example/1atzA.aln ~/test-dncon2/ccmpred.cmap
-freecontact < ./CCMpred/example/1atzA.aln > ~/test-dncon2/freecontact.rr
-./psicov/psicov ./CCMpred/example/1atzA.aln > ~/test-dncon2/psicov.rr
+./CCMpred/bin/ccmpred ./CCMpred/example/1atzA.aln ~/DNCON2/test-dncon2/ccmpred.cmap
+freecontact < ./CCMpred/example/1atzA.aln > ~/DNCON2/test-dncon2/freecontact.rr
+./psicov/psicov ./CCMpred/example/1atzA.aln > ~/DNCON2/test-dncon2/psicov.rr
 ```
 
 **(D) Install Tensorflow, Keras, and h5py and Update keras.json**  
@@ -106,14 +109,14 @@ sudo pip install python-h5py
 
 The script ‘predict-rr-from-features.sh’ takes a feature file as input and predicts contacts using the trained CNN models. Using an existing feature file (feat-3e7u.txt) and a name for output RR file and intermediate stage2 feature file, test the installation of Tensorflow, Keras, and hp5y using the following command:
 ```
-cd ~
+cd ~/DNCON2/
 ./DNCON2/scripts/predict-rr-from-features.sh ./DNCON2/dry-run/output/3e7u/feat-3e7u.txt ./test-dncon2/3e7u.rr ./test-dncon2/feat-stg2.txt
 ```
 Verify that the contents of your output file ‘3e7u.rr’ matches the contents of ‘~/DNCON2/dry-run/output/3e7u/3e7u.dncon2.rr’.
 
 **(E) Install SCRATCH Suite** 
 ```
-cd ~
+cd ~/DNCON2/
 wget http://download.igb.uci.edu/SCRATCH-1D_1.1.tar.gz
 tar zxvf SCRATCH-1D_1.1.tar.gz
 cd SCRATCH-1D_1.1/
@@ -125,7 +128,7 @@ cp -r ~/blast-2.2.26 ./pkg/ (64-bit Legacy Blast is already installed)
 
 **[OPTIONAL] Verify SCRATCH installation**  
 ```
-cd SCRATCH-1D_1.1/
+cd ~/DNCON2/SCRATCH-1D_1.1/
 cd doc
 ../bin/run_SCRATCH-1D_predictors.sh test.fasta test.out 4
 ```
@@ -134,19 +137,19 @@ cd doc
 
 (a) Install PSIPRED
 ```
-cd ~
+cd ~/DNCON2/
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/psipred/old_versions/psipred3.5.tar.gz
 tar zxvf psipred3.5.tar.gz
 ```
 (b) Install Legacy Blast
 ```
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/legacy/2.2.26/blast-2.2.26-x64-linux.tar.gz
-tar -zxvf blast-2.2.26-x64-linux.tar.gz
+tar zxvf blast-2.2.26-x64-linux.tar.gz
 ```
 (c) Install MetaPSICOV
 ```
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/MetaPSICOV/metapsicov.tar.gz
-tar -zxvf metapsicov.tar.gz
+tar zxvf metapsicov.tar.gz
 cd src
 make
 make install
@@ -167,8 +170,8 @@ set datadir2 = /home/badri/metapsicov/data/
 
 **[OPTIONAL] Verify 'runpsipredandsolv' installation:**  
 ```
-cd ~
-cp ./metapsicov/examples/5ptpA.fasta ~/
+cd ~/DNCON2/
+cp ./metapsicov/examples/5ptpA.fasta ~/DNCON2/
 ./metapsicov/runpsipredandsolv 5ptpA.fasta
 ```
 Check the expected output files '5ptpA.ss2', '5ptpA.horiz', and '5ptpA.solv'.
@@ -176,6 +179,7 @@ Check the expected output files '5ptpA.ss2', '5ptpA.horiz', and '5ptpA.solv'.
 **(G) Install HHblits, JackHMMER, and test 'generate-alignments.pl'**  
 ```
 sudo apt install hhsuite
+cd ~/DNCON2/
 wget http://eddylab.org/software/hmmer3/3.1b2/hmmer-3.1b2-linux-intel-x86_64.tar.gz
 tar zxvf hmmer-3.1b2-linux-intel-x86_64.tar.gz
 cd hmmer-3.1b2-linux-intel-x86_64
@@ -183,7 +187,7 @@ cd hmmer-3.1b2-linux-intel-x86_64
 make
 ```
 ```
-cd ~
+cd ~/DNCON2/
 sudo apt-get install csh
 wget ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/ncbi.tar.gz
 tar zxvf ncbi.tar.gz
@@ -224,6 +228,7 @@ ALNSTAT      => '/home/badri/metapsicov/bin/alnstats',
 
 (d) Install NCBI Blast+ v2.2.25
 ```
+cd ~/DNCON2/
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.25/ncbi-blast-2.2.25+-x64-linux.tar.gz
 tar zxvf ncbi-blast-2.2.25+-x64-linux.tar.gz 
 ```
@@ -232,21 +237,21 @@ tar zxvf ncbi-blast-2.2.25+-x64-linux.tar.gz
 
 (a) Verify the script 'run-ccmpred-freecontact-psicov.pl'
 ```
-cd ~
+cd ~/DNCON2/
 ./DNCON2/scripts/run-ccmpred-freecontact-psicov.pl ./DNCON2/dry-run/output/3e7u/alignments/3e7u.aln ./test-dncon2/temp-out-psicov ./test-dncon2/temp-out-ccmpred ./test-dncon2/temp-out-freecontact
 ```
 Compare these outputs with the outputs at './DNCON2/dry-run/output/3e7u/'.
 
 (b) Verify the script 'generate-alignments.pl'
 ```
-cd ~
+cd ~/DNCON2/
 ./DNCON2/scripts/generate-alignments.pl ./DNCON2/dry-run/input/T0900.fasta ./test-dncon2/temp-T0900-alignments/
 ```
 Compare these outputs with the outputs at './DNCON2/dry-run/output/T0900/'.
 
 (c) Verify DNCON2 installation
 ```
-cd ~/DNCON2/dry-run/
+cd ~/DNCON2/DNCON2/dry-run/
 ./run-3e7u.sh
 ./run-T0866.sh
 ./run-T0900.sh
