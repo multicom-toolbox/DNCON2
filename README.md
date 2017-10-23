@@ -49,7 +49,6 @@ tar zxvf uniprot20_2016_02.tar.gz
 
 **(C) Install FreeContact, PSICOV, and CCMpred**  
 ```
-cd ~/DNCON2/
 sudo apt-get install freecontact
 ```
 ```
