@@ -181,9 +181,11 @@ cd doc
 ../bin/run_SCRATCH-1D_predictors.sh test.fasta test.out 4
 ```
 
-**(G) Install HHblits, JackHMMER, and test 'generate-alignments.pl'**  
+**(G) Install HHblits and JackHMMER**  
 ```
 sudo apt install hhsuite
+```
+```
 cd ~/DNCON2/
 wget http://eddylab.org/software/hmmer3/3.1b2/hmmer-3.1b2-linux-intel-x86_64.tar.gz
 tar zxvf hmmer-3.1b2-linux-intel-x86_64.tar.gz
@@ -192,8 +194,10 @@ cd hmmer-3.1b2-linux-intel-x86_64
 make
 ```
 ```
-cd ~/DNCON2/
 sudo apt-get install csh
+```
+```
+cd ~/DNCON2/
 wget ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/ncbi.tar.gz
 tar zxvf ncbi.tar.gz
 csh
@@ -240,21 +244,21 @@ tar zxvf ncbi-blast-2.2.25+-x64-linux.tar.gz
 
 **(I)  Verify DNCON2 scripts**
 
-(a) Verify the script 'run-ccmpred-freecontact-psicov.pl'
+(a) [OPTIONAL] Verify the script 'run-ccmpred-freecontact-psicov.pl'
 ```
 cd ~/DNCON2/
 ./DNCON2/scripts/run-ccmpred-freecontact-psicov.pl ./DNCON2/dry-run/output/3e7u/alignments/3e7u.aln ./test-dncon2/temp-out-psicov ./test-dncon2/temp-out-ccmpred ./test-dncon2/temp-out-freecontact
 ```
 Compare these outputs with the outputs at './DNCON2/dry-run/output/3e7u/'.
 
-(b) Verify the script 'generate-alignments.pl'
+(b) [OPTIONAL] Verify the script 'generate-alignments.pl'
 ```
 cd ~/DNCON2/
 ./DNCON2/scripts/generate-alignments.pl ./DNCON2/dry-run/input/T0900.fasta ./test-dncon2/temp-T0900-alignments/
 ```
 Compare these outputs with the outputs at './DNCON2/dry-run/output/T0900/'.
 
-(c) Verify DNCON2 installation
+(c) Verify DNCON2 installation by making contact predictions for three sequences - 3e7u, T0866, and T0900
 ```
 cd ~/DNCON2/DNCON2/dry-run/
 ./run-3e7u.sh
