@@ -71,6 +71,8 @@ make
 
 **[OPTIONAL] Verify FreeContact, PSICOV, and CCMpred Installation**  
 ```
+cd ~/DNCON2/
+mkdir test-dncon2
 ./CCMpred/bin/ccmpred ./CCMpred/example/1atzA.aln ~/DNCON2/test-dncon2/ccmpred.cmap
 freecontact < ./CCMpred/example/1atzA.aln > ~/DNCON2/test-dncon2/freecontact.rr
 ./psicov/psicov ./CCMpred/example/1atzA.aln > ~/DNCON2/test-dncon2/psicov.rr
