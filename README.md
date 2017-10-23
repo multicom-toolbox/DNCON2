@@ -131,6 +131,8 @@ tar zxvf blast-2.2.26-x64-linux.tar.gz
 ```
 (c) Install MetaPSICOV
 ```
+mkdir ~/DNCON2/metapsicov
+cd  ~/DNCON2/metapsicov/
 wget http://bioinfadmin.cs.ucl.ac.uk/downloads/MetaPSICOV/metapsicov.tar.gz
 tar zxvf metapsicov.tar.gz
 cd src
@@ -141,7 +143,7 @@ make install
 ```
 sudo apt-get install tcsh (below requires it)
 ```
-(e) Update the following paths in 'runpsipredandsolv'
+(e) Update the following paths in '~/DNCON2/metapsicov/runpsipredandsolv'
 ```
 set dbname = /home/badri/databases/uniref/uniref90pfilt
 set ncbidir = /home/badri/blast-2.2.26/bin
