@@ -145,19 +145,20 @@ sudo apt-get install tcsh (below requires it)
 ```
 (e) Update the following paths in '~/DNCON2/metapsicov/runpsipredandsolv'
 ```
-set dbname = /home/badri/databases/uniref/uniref90pfilt
-set ncbidir = /home/badri/blast-2.2.26/bin
-set execdir = /home/badri/psipred/bin/
-set execdir2 = /home/badri/metapsicov/bin/
-set datadir = /home/badri/psipred/data/ 
-set datadir2 = /home/badri/metapsicov/data/
+set dbname = /home/badri/DNCON2/databases/uniref/uniref90pfilt
+set ncbidir = /home/badri/DNCON2/blast-2.2.26/bin
+set execdir = /home/badri/DNCON2/psipred/bin/
+set execdir2 = /home/badri/DNCON2/metapsicov/bin/
+set datadir = /home/badri/DNCON2/psipred/data/ 
+set datadir2 = /home/badri/DNCON2/metapsicov/data/
 ```
 
 **[OPTIONAL] Verify 'runpsipredandsolv' installation:**  
 ```
 cd ~/DNCON2/
-cp ./metapsicov/examples/5ptpA.fasta ~/DNCON2/
-./metapsicov/runpsipredandsolv 5ptpA.fasta
+cp ./metapsicov/examples/5ptpA.fasta ~/DNCON2/test-dncon2/
+cd ~/DNCON2/test-dncon2/
+../metapsicov/runpsipredandsolv 5ptpA.fasta
 ```
 Check the expected output files '5ptpA.ss2', '5ptpA.horiz', and '5ptpA.solv'.
 
