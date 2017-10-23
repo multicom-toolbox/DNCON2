@@ -1,0 +1,86 @@
+Search results will be written to T0900.hhr
+Reading in 8290068 column state sequences with a total of 1874100330 residues
+Neutralized His-tag between positions 94 and 107
+
+Iteration 1
+Prefiltering database
+...................................................................................
+HMMs passed 1st prefilter (gapless profile-profile alignment)  :  81008
+HMMs passed 2nd prefilter (gapped profile-profile alignment)   :     39
+HMMs passed 2nd prefilter and not found in previous iterations :     39
+Scoring 39 HMMs using HMM-HMM Viterbi alignment
+.
+Realigning 33 HMMs using HMM-HMM Maximum Accuracy algorithm
+...
+Merging hits to query profile
+1 sequences belonging to 1 database HMMs found with an E-value < 0.001       
+Number of effective sequences of resulting query HMM: Neff = 1.31
+
+Iteration 2
+Prefiltering database
+...................................................................................
+HMMs passed 1st prefilter (gapless profile-profile alignment)  :  96052
+HMMs passed 2nd prefilter (gapped profile-profile alignment)   :     53
+HMMs passed 2nd prefilter and not found in previous iterations :     53
+Scoring 53 HMMs using HMM-HMM Viterbi alignment
+..
+Realigning 49 HMMs using HMM-HMM Maximum Accuracy algorithm
+.....
+Merging hits to query profile
+1 sequences belonging to 1 database HMMs found with an E-value < 0.001       
+Number of effective sequences of resulting query HMM: Neff = 1.71
+
+Iteration 3
+Prefiltering database
+...................................................................................
+HMMs passed 1st prefilter (gapless profile-profile alignment)  :  79046
+HMMs passed 2nd prefilter (gapped profile-profile alignment)   :     36
+HMMs passed 2nd prefilter and not found in previous iterations :     36
+Scoring 36 HMMs using HMM-HMM Viterbi alignment
+.
+Rescoring previously found HMMs with Viterbi algorithm
+
+Realigning 24 HMMs using HMM-HMM Maximum Accuracy algorithm
+..
+Merging hits to query profile
+1 sequences belonging to 1 database HMMs found with an E-value < 0.001       
+Number of effective sequences of resulting query HMM: Neff = 1.74
+
+Query         T0900
+Match_columns 106
+No_of_seqs    3 out of 11
+Neff          1.7 
+Searched_HMMs 37
+Date          Sat Sep 23 06:31:57 2017
+Command       /usr/bin/hhblits -i T0900.fasta -d /home/badri/databases/uniprot20_2016_02/uniprot20_2016_02 -oa3m hhb-cov60.a3m -cpu 2 -n 3 -maxfilt 500000 -diff inf -e 0.001 -id 99 -cov 60 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 tr|W7UH13|W7UH13_RUMFL Unchara  99.8 7.2E-25 3.9E-30  196.0   0.0   78   18-96    562-640 (762)
+  2 tr|W7UH13|W7UH13_RUMFL Unchara  99.8 7.9E-25 4.7E-30  196.0   0.0   79   18-97    562-641 (762)
+  3 tr|W1ERI2|W1ERI2_ECOLX Unchara  90.2    0.34 1.5E-06   36.1   0.0   27   33-59     28-54  (64)
+  4 tr|R8T3J3|R8T3J3_BACCE Unchara  82.2     2.3   1E-05   39.6   0.0   21   52-72    275-295 (335)
+  5 tr|A0A0R3VZG4|A0A0R3VZG4_TAEAS  78.2       4 1.8E-05   36.6   0.0   27   64-94     72-98  (225)
+  6 tr|A0A061QLZ5|A0A061QLZ5_9CHLO  68.2      11 4.7E-05   35.0   0.0   38   47-84    151-190 (276)
+  7 tr|C7DDC4|C7DDC4_9RHOB Unchara  65.8      13 5.7E-05   35.0   0.0   21   67-87     50-70  (314)
+  8 tr|A0A0B4C581|A0A0B4C581_9RHOB  65.7      13 5.8E-05   29.6   0.0   24   62-85     20-43  (83)
+  9 tr|A0A0D8JVM3|A0A0D8JVM3_COCIM  63.8      15 6.6E-05   30.6   0.0   27   50-76     60-86  (111)
+ 10 tr|B9D1A4|B9D1A4_CAMRE Unchara  61.9      17 7.6E-05   26.8   0.0   24   10-33     21-44  (50)
+ 11 tr|A0A068QKM1|A0A068QKM1_9VIRU  55.5      26 0.00012   27.7   0.0   28   15-42     35-62  (75)
+ 12 tr|G2YRQ6|G2YRQ6_BOTF4 Unchara  54.6      28 0.00012   26.2   0.0   34   45-79      9-43  (54)
+ 13 tr|M7U7N1|M7U7N1_BOTF1 Putativ  47.7      42 0.00019   28.8   0.0   40    6-45     22-62  (130)
+ 14 tr|K3Z956|K3Z956_SETIT Unchara  43.8      53 0.00024   30.6   0.0   38   44-81    181-218 (246)
+ 15 tr|Q7NLU0|Q7NLU0_GLOVI Gll1031  38.4      74 0.00033   28.0   0.0   37   49-85    102-141 (148)
+ 16 tr|Q21Y38|Q21Y38_RHOFT Cytochr  37.3      78 0.00035   31.8   0.0   37   39-75     52-88  (475)
+ 17 tr|A0A074ZFS2|A0A074ZFS2_9TREM  37.0      80 0.00036   27.7   0.0   36   25-62     59-94  (142)
+ 18 tr|S9X0R8|S9X0R8_9CETA Transdu  36.7      81 0.00036   32.0   0.0   32   66-97    113-144 (529)
+ 19 tr|A0A0B1SBW3|A0A0B1SBW3_OESDE  35.3      89 0.00039   24.8   0.0   41   52-92      8-48  (70)
+ 20 tr|A0A0C2E2C1|A0A0C2E2C1_9BILA  32.4 1.1E+02 0.00047   26.2   0.0   33   47-79     36-68  (113)
+ 21 sp|Q9DUB6|ORF3_TTVZ1 Uncharact  31.2 1.1E+02 0.00051   27.0   0.0   43   31-75    105-147 (151)
+ 22 tr|A0A0D8XTS1|A0A0D8XTS1_DICVI  27.8 1.4E+02 0.00064   25.5   0.0   34   47-80     47-80  (111)
+ 23 sp|Q3V4V3|Y220_ATV Uncharacter  25.1 1.7E+02 0.00077   27.3   0.0   39    2-40     85-123 (220)
+ 24 tr|E0RK41|E0RK41_PAEP6 Unchara  23.5 1.9E+02 0.00086   27.5   0.0   54   26-79     32-85  (253)
+ 25 tr|W7C7V6|W7C7V6_LISGR Peptida  23.1   2E+02 0.00089   27.9   0.0   25   55-79    165-189 (293)
+
+
+Writing A3M alignment to hhb-cov60.a3m
+Done

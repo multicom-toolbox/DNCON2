@@ -1,0 +1,189 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: nr90
+           9,741,704 sequences; 3,383,841,944 total letters
+
+Results from round 1
+
+
+Query= T0900
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  gi|268609198|ref|ZP_06142925.1| mannan endo-1,4-beta-mannosidas...   204    3e-51
+  gi|1915944|emb|CAB05881.1| endoglucanase A [Ruminococcus flavef...  85.1    2e-15
+  gi|268610604|ref|ZP_06144331.1| endoglucanase family protein [R...  64.3    3e-09
+
+
+> gi|268609198|ref|ZP_06142925.1| mannan endo-1,4-beta-mannosidase 
+[Ruminococcus flavefaciens FD-1]
+Length=947
+
+ Score =  204 bits (518),  Expect = 3e-51, Method: Compositional matrix adjust.
+ Identities = 95/96 (99%), Positives = 95/96 (99%), Gaps = 0/96 (0%)
+
+Query  3    AEEESTAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNG  62
+            AEEE TAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNG
+Sbjct  407  AEEEDTAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNG  466
+
+Query  63   NLVVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDYKA  98
+            NLVVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDYKA
+Sbjct  467  NLVVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDYKA  502
+
+
+> gi|1915944|emb|CAB05881.1| endoglucanase A [Ruminococcus flavefaciens]
+Length=759
+
+ Score = 85.1 bits (209),  Expect = 2e-15, Method: Compositional matrix adjust.
+ Identities = 37/75 (50%), Positives = 48/75 (64%), Gaps = 1/75 (1%)
+
+Query  13   PFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNGNLVVEVPMSK  72
+            P + +      N  I  KG PN+  NGC+G++  G WE+IEWEG  D NGNL VE+P+SK
+Sbjct  555  PISFANAQAGDNLIIKIKGEPNTDTNGCVGFNGTG-WEQIEWEGKTDANGNLTVEIPVSK  613
+
+Query  73   IPAGVTSGEIQIWWH  87
+             PAG+ S E QIW+ 
+Sbjct  614  FPAGLQSAEAQIWYQ  628
+
+
+> gi|268610604|ref|ZP_06144331.1| endoglucanase family protein 
+[Ruminococcus flavefaciens FD-1]
+Length=765
+
+ Score = 64.3 bits (155),  Expect = 3e-09, Method: Compositional matrix adjust.
+ Identities = 31/93 (34%), Positives = 48/93 (52%), Gaps = 1/93 (1%)
+
+Query  4    EEESTAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNGN  63
+            E E+T+ +    +          +N +G P++  NG +G+    +W +IEW GS D +G 
+Sbjct  541  EPEATSKIKKINLKDAKNEDTLYVNLEGAPSTKTNGALGFMKGDEWTQIEWSGSTDADGK  600
+
+Query  64   LVVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDY  96
+            L VE+P++    G T  E QIW    DL + DY
+Sbjct  601  LTVEIPLADAVVGGTV-EFQIWAGFKDLDVKDY  632
+
+
+
+Lambda     K      H
+   0.314    0.134    0.440 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 85214587136
+Results from round 2
+
+
+Query= T0900
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  gi|268609198|ref|ZP_06142925.1| mannan endo-1,4-beta-mannosidas...   172    1e-41
+  gi|268610604|ref|ZP_06144331.1| endoglucanase family protein [R...   142    1e-32
+  gi|1915944|emb|CAB05881.1| endoglucanase A [Ruminococcus flavef...   126    7e-28
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> gi|268609198|ref|ZP_06142925.1| mannan endo-1,4-beta-mannosidase 
+[Ruminococcus flavefaciens FD-1]
+Length=947
+
+ Score =  172 bits (436),  Expect = 1e-41, Method: Composition-based stats.
+ Identities = 95/96 (99%), Positives = 95/96 (99%), Gaps = 0/96 (0%)
+
+Query  3    AEEESTAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNG  62
+            AEEE TAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNG
+Sbjct  407  AEEEDTAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNG  466
+
+Query  63   NLVVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDYKA  98
+            NLVVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDYKA
+Sbjct  467  NLVVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDYKA  502
+
+
+> gi|268610604|ref|ZP_06144331.1| endoglucanase family protein 
+[Ruminococcus flavefaciens FD-1]
+Length=765
+
+ Score =  142 bits (357),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 31/93 (34%), Positives = 48/93 (52%), Gaps = 1/93 (1%)
+
+Query  4    EEESTAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNGN  63
+            E E+T+ +    +          +N +G P++  NG +G+    +W +IEW GS D +G 
+Sbjct  541  EPEATSKIKKINLKDAKNEDTLYVNLEGAPSTKTNGALGFMKGDEWTQIEWSGSTDADGK  600
+
+Query  64   LVVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDY  96
+            L VE+P++    G T  E QIW    DL + DY
+Sbjct  601  LTVEIPLADAVVGGTV-EFQIWAGFKDLDVKDY  632
+
+
+> gi|1915944|emb|CAB05881.1| endoglucanase A [Ruminococcus flavefaciens]
+Length=759
+
+ Score =  126 bits (317),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 38/92 (42%), Positives = 50/92 (55%), Gaps = 1/92 (1%)
+
+Query  5    EESTAILYPFTISGNDRNGNFTINFKGTPNSTNNGCIGYSYNGDWEKIEWEGSCDGNGNL  64
+                    P + +      N  I  KG PN+  NGC+G++  G WE+IEWEG  D NGNL
+Sbjct  547  PVDKTKKTPISFANAQAGDNLIIKIKGEPNTDTNGCVGFNGTG-WEQIEWEGKTDANGNL  605
+
+Query  65   VVEVPMSKIPAGVTSGEIQIWWHSGDLKMTDY  96
+             VE+P+SK PAG+ S E QIW+    +    Y
+Sbjct  606  TVEIPVSKFPAGLQSAEAQIWYQPELVDFDGY  637
+
+
+
+Lambda     K      H
+   0.309    0.130    0.390 
+
+Gapped
+Lambda     K      H
+   0.267   0.0407    0.140 
+
+Effective search space used: 85214587136
+
+Search has CONVERGED!
+
+
+  Database: nr90
+    Posted date:  Jan 24, 2012  1:04 PM
+  Number of letters in database: 3,383,841,944
+  Number of sequences in database:  9,741,704
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

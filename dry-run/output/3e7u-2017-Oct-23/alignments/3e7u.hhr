@@ -1,0 +1,1025 @@
+Query         3e7u
+Match_columns 40
+No_of_seqs    136 out of 143
+Neff          4.0 
+Searched_HMMs 78
+Date          Fri Sep 22 21:42:43 2017
+Command       /usr/bin/hhblits -i 3e7u.fasta -d /home/badri/databases/uniprot20_2016_02/uniprot20_2016_02 -oa3m hhb-cov60.a3m -cpu 2 -n 3 -maxfilt 500000 -diff inf -e 0.001 -id 99 -cov 60 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 tr|G3MQE3|G3MQE3_9ACAR Putativ  99.7 2.7E-21 1.6E-26  111.7   0.0   35    1-40     36-71  (72)
+  2 tr|G3MQE3|G3MQE3_9ACAR Putativ  99.7 2.7E-21 1.6E-26  111.7   0.0   35    1-40     36-71  (72)
+  3 sp|P81610|DEFA_MYTED Defensin-  99.7 4.1E-20   2E-25   96.3   0.0   35    1-40      1-36  (37)
+  4 sp|P81610|DEFA_MYTED Defensin-  99.7 4.1E-20 2.1E-25   96.3   0.0   35    1-40      1-36  (37)
+  5 tr|G3MHR5|G3MHR5_9ACAR Putativ  99.6 7.3E-19 3.3E-24  106.6   0.0   35    1-40     63-98  (100)
+  6 tr|G3MHR5|G3MHR5_9ACAR Putativ  99.6 7.5E-19 3.4E-24  106.6   0.0   35    1-40     63-98  (100)
+  7 tr|B7PQR1|B7PQR1_IXOSC Scapula  99.6   2E-18 9.2E-24  104.8   0.0   35    1-40     64-99  (101)
+  8 tr|B7PQR1|B7PQR1_IXOSC Scapula  99.6 2.1E-18 9.3E-24  104.8   0.0   35    1-40     64-99  (101)
+  9 tr|A0A0H1BJF3|A0A0H1BJF3_9EURO  99.5 5.1E-18 2.5E-23  105.3   0.0   38    1-40     79-116 (116)
+ 10 tr|A0A0H1BJF3|A0A0H1BJF3_9EURO  99.5 5.4E-18 2.7E-23  105.3   0.0   38    1-40     79-116 (116)
+ 11 tr|J7FYY5|J7FYY5_RUDPH Defensi  99.5 4.9E-18 2.8E-23   98.5   0.0   36    1-40     24-61  (72)
+ 12 tr|J7FYY5|J7FYY5_RUDPH Defensi  99.5 5.4E-18 2.9E-23   98.5   0.0   36    1-40     24-61  (72)
+ 13 tr|G3MPF6|G3MPF6_9ACAR Putativ  99.5 3.4E-17 1.5E-22   99.4   0.0   35    1-40     63-98  (100)
+ 14 tr|G3MPF6|G3MPF6_9ACAR Putativ  99.5 3.4E-17 1.5E-22   99.4   0.0   35    1-40     63-98  (100)
+ 15 tr|M4NCH1|M4NCH1_CRIPL Defensi  99.5 8.1E-17 4.1E-22   91.9   0.0   35    1-40     25-62  (63)
+ 16 tr|M4NCH1|M4NCH1_CRIPL Defensi  99.5 7.9E-17 4.2E-22   91.9   0.0   35    1-40     25-62  (63)
+ 17 tr|A0A059J5P2|A0A059J5P2_9EURO  99.4 1.4E-16 7.3E-22   95.0   0.0   34    1-39     48-82  (85)
+ 18 tr|A0A059J5P2|A0A059J5P2_9EURO  99.4 1.4E-16 7.5E-22   95.0   0.0   34    1-39     48-82  (85)
+ 19 sp|P80571|DEFI_MYTGA Defensin   99.4   1E-15 4.6E-21   86.5   0.0   35    1-40      1-36  (60)
+ 20 sp|P80571|DEFI_MYTGA Defensin   99.4   1E-15 4.6E-21   86.5   0.0   35    1-40      1-36  (60)
+ 21 tr|U1QAH3|U1QAH3_9ACTO Arthrop  99.3 1.5E-15 7.5E-21   87.7   0.0   34    1-40     33-67  (67)
+ 22 tr|U1QAH3|U1QAH3_9ACTO Arthrop  99.3 1.4E-15 7.6E-21   87.7   0.0   34    1-40     33-67  (67)
+ 23 tr|Q5QFI4|Q5QFI4_IXORI Defensi  99.3 7.4E-15 3.3E-20   70.5   0.0   23    3-30      1-23  (23)
+ 24 tr|Q5QFI4|Q5QFI4_IXORI Defensi  99.3 7.5E-15 3.4E-20   70.5   0.0   23    3-30      1-23  (23)
+ 25 tr|N6THI6|N6THI6_DENPD Unchara  99.1 1.3E-13 7.8E-19   82.1   0.0   30    8-39     53-82  (84)
+ 26 tr|N6THI6|N6THI6_DENPD Unchara  99.1 1.3E-13 7.8E-19   82.1   0.0   30    8-39     53-82  (84)
+ 27 sp|P80033|DEFA_ZOPAT Defensin,  99.1 2.7E-13 1.3E-18   73.2   0.0   30    8-39     13-42  (43)
+ 28 sp|P80033|DEFA_ZOPAT Defensin,  99.1 2.7E-13 1.3E-18   73.2   0.0   30    8-39     13-42  (43)
+ 29 tr|T1I7B4|T1I7B4_RHOPR Unchara  98.7   4E-11 2.5E-16   72.7   0.0   29    8-39     64-92  (94)
+ 30 tr|A0A084G2W8|A0A084G2W8_9PEZI  98.7 9.5E-11 4.3E-16   74.5   0.0   29    1-33     53-81  (129)
+ 31 tr|A0A084G2W8|A0A084G2W8_9PEZI  98.7 9.5E-11 4.3E-16   74.5   0.0   29    1-33     53-81  (129)
+ 32 tr|A6RCG3|A6RCG3_AJECN Predict  98.4   1E-09 4.5E-15   70.9   0.0   31    1-32     79-109 (143)
+ 33 tr|A6RCG3|A6RCG3_AJECN Predict  98.4   1E-09 4.5E-15   70.9   0.0   31    1-32     79-109 (143)
+ 34 tr|B9TXR3|B9TXR3_9HYME Defensi  98.3 3.6E-09 1.8E-14   64.5   0.0   30    8-39     57-86  (88)
+ 35 tr|C0NM15|C0NM15_AJECG Putativ  98.2 6.4E-09 2.8E-14   70.1   0.0   31    1-32    143-173 (203)
+ 36 tr|C0NM15|C0NM15_AJECG Putativ  98.2 6.4E-09 2.8E-14   70.1   0.0   31    1-32    143-173 (203)
+ 37 tr|Q6H9L9|Q6H9L9_CRAGI Gigasin  98.2 6.5E-09 2.9E-14   57.0   0.0   23    1-28     23-45  (45)
+ 38 tr|Q6H9L9|Q6H9L9_CRAGI Gigasin  98.2 6.5E-09 2.9E-14   57.0   0.0   23    1-28     23-45  (45)
+ 39 tr|B3RFK4|B3RFK4_9DIPT Defensi  98.2 1.2E-08 5.6E-14   59.0   0.0   30    8-39     30-59  (62)
+ 40 sp|P80407|DEFI_PALPR Defensin   98.0 3.1E-08 1.5E-13   54.1   0.0   29    8-39     13-41  (43)
+ 41 tr|A0A0K8VKU3|A0A0K8VKU3_BACLA  98.0   5E-08 2.4E-13   62.2   0.0   30    8-39     89-118 (120)
+ 42 tr|E2BDP6|E2BDP6_HARSA Putativ  98.0 5.4E-08 2.5E-13   55.3   0.0   29    8-39     24-52  (54)
+ 43 tr|B7QGE4|B7QGE4_IXOSC Defensi  97.9 8.3E-08 3.7E-13   56.8   0.0   36    1-40     35-71  (71)
+ 44 tr|B7QGE4|B7QGE4_IXOSC Defensi  97.9 8.3E-08 3.7E-13   56.8   0.0   36    1-40     35-71  (71)
+ 45 tr|E0W2M5|E0W2M5_PEDHC Defensi  97.9   1E-07 5.1E-13   60.5   0.0   29    8-39     81-111 (113)
+ 46 tr|A0A0K8L7T6|A0A0K8L7T6_9EURO  97.8 2.4E-07 1.1E-12   61.8   0.0   29    1-33     54-83  (174)
+ 47 tr|A0A0K8L7T6|A0A0K8L7T6_9EURO  97.8 2.4E-07 1.1E-12   61.8   0.0   29    1-33     54-83  (174)
+ 48 tr|B7QIW0|B7QIW0_IXOSC Putativ  97.8 2.6E-07 1.2E-12   54.9   0.0   34    1-39     32-67  (71)
+ 49 tr|B7QIW0|B7QIW0_IXOSC Putativ  97.8 2.6E-07 1.3E-12   54.9   0.0   34    1-39     32-67  (71)
+ 50 tr|E2AKI0|E2AKI0_CAMFO Putativ  97.7 3.1E-07 1.4E-12   53.3   0.0   28    9-39     32-59  (61)
+ 51 tr|D6WVN3|D6WVN3_TRICA Putativ  97.7 3.7E-07 1.7E-12   58.9   0.0   30    8-39    101-130 (132)
+ 52 sp|P0CF77|DEF_TITDI Tddefensin  97.7 4.6E-07 2.1E-12   48.1   0.0   32    4-40      3-35  (36)
+ 53 sp|P0CF77|DEF_TITDI Tddefensin  97.7 4.6E-07 2.1E-12   48.1   0.0   32    4-40      3-35  (36)
+ 54 tr|A0A034WWA1|A0A034WWA1_BACDO  97.6 5.1E-07 2.8E-12   58.3   0.0   27   12-40    101-128 (128)
+ 55 tr|K1Q8B1|K1Q8B1_CRAGI Unchara  97.6 8.1E-07 3.6E-12   64.9   0.0   33    1-39     44-76  (415)
+ 56 tr|K1Q8B1|K1Q8B1_CRAGI Unchara  97.6 8.1E-07 3.6E-12   64.9   0.0   33    1-39     44-76  (415)
+ 57 tr|A0A0M9A1F6|A0A0M9A1F6_9HYME  97.5 1.3E-06 6.3E-12   52.1   0.0   29    8-39     42-70  (72)
+ 58 tr|I2HB38|I2HB38_HARSA Defensi  97.3 4.4E-06   2E-11   50.4   0.0   29    8-39     47-75  (77)
+ 59 tr|A0A026WVD4|A0A026WVD4_CERBI  97.2 6.6E-06 2.9E-11   51.0   0.0   29    8-39     63-91  (93)
+ 60 sp|P81462|DEFI_BOMPA Defensin   97.0 1.9E-05 8.3E-11   44.9   0.0   26   11-39     13-38  (51)
+ 61 tr|R4G4L8|R4G4L8_RHOPR Putativ  96.9 4.4E-05   2E-10   49.6   0.0   29    8-39     94-122 (124)
+ 62 sp|A9QLM3|KA11L_LYCMC Toxin KT  96.5 0.00018 8.4E-10   42.8   0.0   33    3-39     30-63  (65)
+ 63 tr|G0MWM7|G0MWM7_CAEBE Putativ  96.5 0.00019 8.5E-10   45.7   0.0   37    2-39     61-98  (106)
+ 64 tr|E9IDN0|E9IDN0_SOLIN Putativ  96.4 0.00028 1.2E-09   45.7   0.0   30    8-39     88-117 (119)
+ 65 tr|C3YS52|C3YS52_BRAFL Putativ  96.4 0.00029 1.3E-09   47.7   0.0   23   10-33     79-101 (169)
+ 66 tr|A0A0A9XAY7|A0A0A9XAY7_LYGHE  96.3 0.00034 1.6E-09   45.6   0.0   28    9-39     93-120 (122)
+ 67 tr|E2BT13|E2BT13_HARSA Royalis  96.0  0.0011 4.8E-09   36.4   0.0   22    4-30     18-39  (39)
+ 68 tr|C3Z4F2|C3Z4F2_BRAFL Putativ  95.8  0.0017 7.5E-09   41.8   0.0   32    7-39     76-108 (109)
+ 69 tr|A0A072U0T0|A0A072U0T0_MEDTR  95.5  0.0036 1.6E-08   34.1   0.0   32    3-39      3-35  (37)
+ 70 tr|M1D0T0|M1D0T0_SOLTU Unchara  95.2  0.0042 2.9E-08   35.6   0.0   29   11-40     27-55  (58)
+ 71 tr|B2BA88|B2BA88_LILLO LLA-144  94.7   0.013 6.1E-08   32.2   0.0   27   12-39      7-33  (37)
+ 72 tr|V5LF08|V5LF08_CITLA Defensi  94.3   0.019   1E-07   35.3   0.0   28   11-39     43-70  (75)
+ 73 tr|A0A072TLP4|A0A072TLP4_MEDTR  94.0   0.026 1.4E-07   34.4   0.0   31   10-40     37-67  (70)
+ 74 tr|A0A0E0DB27|A0A0E0DB27_9ORYZ  91.9    0.16 7.1E-07   35.7   0.0   26   13-39    153-178 (182)
+ 75 tr|D0N3K2|D0N3K2_PHYIT Putativ  80.7     2.9 1.3E-05   28.1   0.0   20    3-22     65-84  (111)
+ 76 tr|Q9XHE3|Q9XHE3_CAPCH Putativ  77.4     3.4   2E-05   27.4   0.0   30   10-39     42-71  (107)
+ 77 tr|G5A1R4|G5A1R4_PHYSP Putativ  74.6     5.9 2.6E-05   27.8   0.0   20    3-22    105-124 (148)
+ 78 tr|A0A0P4VSM3|A0A0P4VSM3_9HEMI  64.7      14 6.2E-05   24.5   0.0   30    8-39     55-84  (94)
+
+No 1  
+>tr|G3MQE3|G3MQE3_9ACAR Putative uncharacterized protein OS=Amblyomma maculatum PE=2 SV=1
+Probab=99.72  E-value=2.7e-21  Score=111.74  Aligned_cols=35  Identities=51%  Similarity=1.192  Sum_probs=34.1
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||||    |++||+||+|| +||||||+|+ |+||+||
+T Consensus        36 gfgCPfn----q~~Ch~HCrsi-grrgGyC~G~~K~TC~C~   71 (72)
+T tr|G3MQE3|G3MQ   36 GFGCPFN----QGACHRHCRSI-GRRGGYCGGFFKQTCICY   71 (72)
+Confidence            7999999    99999999999 9999999999 9999997
+
+
+No 2  
+>tr|G3MQE3|G3MQE3_9ACAR Putative uncharacterized protein OS=Amblyomma maculatum PE=2 SV=1
+Probab=99.72  E-value=2.7e-21  Score=111.74  Aligned_cols=35  Identities=51%  Similarity=1.192  Sum_probs=34.1
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||||    |++||+||+|| +||||||+|+ |+||+||
+T Consensus        36 gfgCPfn----q~~Ch~HCrsi-grrgGyC~G~~K~TC~C~   71 (72)
+T tr|G3MQE3|G3MQ   36 GFGCPFN----QGACHRHCRSI-GRRGGYCGGFFKQTCICY   71 (72)
+Confidence            7999999    99999999999 9999999999 9999997
+
+
+No 3  
+>sp|P81610|DEFA_MYTED Defensin-A OS=Mytilus edulis PE=1 SV=1
+Probab=99.67  E-value=4.1e-20  Score=96.31  Aligned_cols=35  Identities=57%  Similarity=1.378  Sum_probs=33.6
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||+     +++||+||+||.||+||||+++ +++|+||
+T Consensus         1 GfGCP~-----~~~ChrHCrsi~gR~GGYCaG~~~ltCTCy   36 (37)
+T sp|P81610|DEFA    1 GFGCPL-----QYQCHRHCRSIPGRRGGYCAGPLKLTCTCY   36 (37)
+Confidence            799999     6999999999988999999999 9999997
+
+
+No 4  
+>sp|P81610|DEFA_MYTED Defensin-A OS=Mytilus edulis PE=1 SV=1
+Probab=99.67  E-value=4.1e-20  Score=96.31  Aligned_cols=35  Identities=57%  Similarity=1.378  Sum_probs=33.6
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||+     +++||+||+||.||+||||+++ +++|+||
+T Consensus         1 GfGCP~-----~~~ChrHCrsi~gR~GGYCaG~~~ltCTCy   36 (37)
+T sp|P81610|DEFA    1 GFGCPL-----QYQCHRHCRSIPGRRGGYCAGPLKLTCTCY   36 (37)
+Confidence            799999     6999999999988999999999 9999997
+
+
+No 5  
+>tr|G3MHR5|G3MHR5_9ACAR Putative uncharacterized protein (Fragment) OS=Amblyomma maculatum PE=2 SV=1
+Probab=99.60  E-value=7.3e-19  Score=106.61  Aligned_cols=35  Identities=54%  Similarity=1.269  Sum_probs=34.3
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||||    |++||+||+|| |||||||.+. |++|+||
+T Consensus        63 gfgcp~n----q~achrhcrsi-grrggycagiikqtctcy   98 (100)
+T tr|G3MHR5|G3MH   63 GFGCPFN----QYACHRHCRSI-GRRGGYCAGIIKQTCTCY   98 (100)
+Confidence            7999999    99999999999 9999999999 9999998
+
+
+No 6  
+>tr|G3MHR5|G3MHR5_9ACAR Putative uncharacterized protein (Fragment) OS=Amblyomma maculatum PE=2 SV=1
+Probab=99.60  E-value=7.5e-19  Score=106.61  Aligned_cols=35  Identities=54%  Similarity=1.269  Sum_probs=34.3
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||||    |++||+||+|| |||||||.+. |++|+||
+T Consensus        63 gfgcp~n----q~achrhcrsi-grrggycagiikqtctcy   98 (100)
+T tr|G3MHR5|G3MH   63 GFGCPFN----QYACHRHCRSI-GRRGGYCAGIIKQTCTCY   98 (100)
+Confidence            7999999    99999999999 9999999999 9999998
+
+
+No 7  
+>tr|B7PQR1|B7PQR1_IXOSC Scapularisin preproprotein, putative OS=Ixodes scapularis GN=IscW_ISCW005926 PE=4 SV=1
+Probab=99.57  E-value=2e-18  Score=104.78  Aligned_cols=35  Identities=54%  Similarity=1.219  Sum_probs=34.3
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      ||||||+    +.+||+||+|| |||||||.++ |++|+||
+T Consensus        64 gfgcpf~----qgachrhcqsi-grrggycag~~kqtctcy   99 (101)
+T tr|B7PQR1|B7PQ   64 GFGCPFN----QGACHRHCQSI-GRRGGYCAGFIKQTCTCY   99 (101)
+Confidence            7999999    99999999999 9999999999 9999998
+
+
+No 8  
+>tr|B7PQR1|B7PQR1_IXOSC Scapularisin preproprotein, putative OS=Ixodes scapularis GN=IscW_ISCW005926 PE=4 SV=1
+Probab=99.57  E-value=2.1e-18  Score=104.78  Aligned_cols=35  Identities=54%  Similarity=1.219  Sum_probs=34.3
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      ||||||+    +.+||+||+|| |||||||.++ |++|+||
+T Consensus        64 gfgcpf~----qgachrhcqsi-grrggycag~~kqtctcy   99 (101)
+T tr|B7PQR1|B7PQ   64 GFGCPFN----QGACHRHCQSI-GRRGGYCAGFIKQTCTCY   99 (101)
+Confidence            7999999    99999999999 9999999999 9999998
+
+
+No 9  
+>tr|A0A0H1BJF3|A0A0H1BJF3_9EURO Uncharacterized protein OS=Emmonsia parva UAMH 139 GN=EMPG_13550 PE=4 SV=1
+Probab=99.54  E-value=5.1e-18  Score=105.27  Aligned_cols=38  Identities=66%  Similarity=1.512  Sum_probs=36.8
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~Cy   40 (40)
+                      ||||+. |+.|++.||+||+||+|||||||.. ..+|+||
+T Consensus        79 G~GC~~-~~~nD~~CH~HCKsIkGYkGGYC~~-g~iCKCY  116 (116)
+T tr|A0A0H1BJF3|   79 GWGCNI-FGGNDYRCHRHCKSIKGYKGGYCKL-GGICKCY  116 (116)
+Confidence            799999 9999999999999999999999998 8999998
+
+
+No 10 
+>tr|A0A0H1BJF3|A0A0H1BJF3_9EURO Uncharacterized protein OS=Emmonsia parva UAMH 139 GN=EMPG_13550 PE=4 SV=1
+Probab=99.54  E-value=5.4e-18  Score=105.27  Aligned_cols=38  Identities=66%  Similarity=1.512  Sum_probs=36.8
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~Cy   40 (40)
+                      ||||+. |+.|++.||+||+||+|||||||.. ..+|+||
+T Consensus        79 G~GC~~-~~~nD~~CH~HCKsIkGYkGGYC~~-g~iCKCY  116 (116)
+T tr|A0A0H1BJF3|   79 GWGCNI-FGGNDYRCHRHCKSIKGYKGGYCKL-GGICKCY  116 (116)
+Confidence            799999 9999999999999999999999998 8999998
+
+
+No 11 
+>tr|J7FYY5|J7FYY5_RUDPH Defensin OS=Ruditapes philippinarum GN=Def PE=2 SV=1
+Probab=99.54  E-value=4.9e-18  Score=98.53  Aligned_cols=36  Identities=50%  Similarity=1.284  Sum_probs=34.5
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG--GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~--~~~C~Cy   40 (40)
+                      |||||++    +++||+||++++|+|||||+++  |++|+||
+T Consensus        24 gfGCP~~----~y~ChnhCr~svgcrgGyC~~~~~r~~C~Cy   61 (72)
+T tr|J7FYY5|J7FY   24 GFGCPSN----QYQCHNHCRYSVGCRGGYCDSDMLRQRCRCY   61 (72)
+Confidence            6999999    9999999999999999999998  8899997
+
+
+No 12 
+>tr|J7FYY5|J7FYY5_RUDPH Defensin OS=Ruditapes philippinarum GN=Def PE=2 SV=1
+Probab=99.54  E-value=5.4e-18  Score=98.53  Aligned_cols=36  Identities=50%  Similarity=1.284  Sum_probs=34.5
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG--GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~--~~~C~Cy   40 (40)
+                      |||||++    +++||+||++++|+|||||+++  |++|+||
+T Consensus        24 gfGCP~~----~y~ChnhCr~svgcrgGyC~~~~~r~~C~Cy   61 (72)
+T tr|J7FYY5|J7FY   24 GFGCPSN----QYQCHNHCRYSVGCRGGYCDSDMLRQRCRCY   61 (72)
+Confidence            6999999    9999999999999999999998  8899997
+
+
+No 13 
+>tr|G3MPF6|G3MPF6_9ACAR Putative uncharacterized protein OS=Amblyomma maculatum PE=2 SV=1
+Probab=99.49  E-value=3.4e-17  Score=99.40  Aligned_cols=35  Identities=54%  Similarity=1.210  Sum_probs=34.2
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||||    |.+||+||+|| .||||||.+. |++|+||
+T Consensus        63 gfgcpfn----qgachnhcrsi-rrrggycagvikqtctcy   98 (100)
+T tr|G3MPF6|G3MP   63 GFGCPFN----QGACHNHCRSI-RRRGGYCAGVIKQTCTCY   98 (100)
+Confidence            7999999    99999999999 9999999999 9999998
+
+
+No 14 
+>tr|G3MPF6|G3MPF6_9ACAR Putative uncharacterized protein OS=Amblyomma maculatum PE=2 SV=1
+Probab=99.49  E-value=3.4e-17  Score=99.40  Aligned_cols=35  Identities=54%  Similarity=1.210  Sum_probs=34.2
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||||    |.+||+||+|| .||||||.+. |++|+||
+T Consensus        63 gfgcpfn----qgachnhcrsi-rrrggycagvikqtctcy   98 (100)
+T tr|G3MPF6|G3MP   63 GFGCPFN----QGACHNHCRSI-RRRGGYCAGVIKQTCTCY   98 (100)
+Confidence            7999999    99999999999 9999999999 9999998
+
+
+No 15 
+>tr|M4NCH1|M4NCH1_CRIPL Defensin OS=Cristaria plicata PE=2 SV=1
+Probab=99.45  E-value=8.1e-17  Score=91.91  Aligned_cols=35  Identities=49%  Similarity=1.236  Sum_probs=33.5
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCK-SIKGYKGGYCAKG--GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~-s~~GrrGGyC~g~--~~~C~Cy   40 (40)
+                      |||||+|    |++|++||+ |+ |.|||||+.+  |.+|+||
+T Consensus        25 gfGCp~n----qy~CN~hC~~s~-~crgGYC~a~~LwlrC~C~   62 (63)
+T tr|M4NCH1|M4NC   25 GFGCPGN----QYKCNNHCRVSI-GCRAGYCDAVTLWLRCTCT   62 (63)
+Confidence            7999999    999999999 88 9999999999  9999996
+
+
+No 16 
+>tr|M4NCH1|M4NCH1_CRIPL Defensin OS=Cristaria plicata PE=2 SV=1
+Probab=99.45  E-value=7.9e-17  Score=91.91  Aligned_cols=35  Identities=49%  Similarity=1.236  Sum_probs=33.5
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCK-SIKGYKGGYCAKG--GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~-s~~GrrGGyC~g~--~~~C~Cy   40 (40)
+                      |||||+|    |++|++||+ |+ |.|||||+.+  |.+|+||
+T Consensus        25 gfGCp~n----qy~CN~hC~~s~-~crgGYC~a~~LwlrC~C~   62 (63)
+T tr|M4NCH1|M4NC   25 GFGCPGN----QYKCNNHCRVSI-GCRAGYCDAVTLWLRCTCT   62 (63)
+Confidence            7999999    999999999 88 9999999999  9999996
+
+
+No 17 
+>tr|A0A059J5P2|A0A059J5P2_9EURO Uncharacterized protein OS=Trichophyton interdigitale MR816 GN=H109_04975 PE=4 SV=1
+Probab=99.43  E-value=1.4e-16  Score=94.99  Aligned_cols=34  Identities=47%  Similarity=1.071  Sum_probs=33.1
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKC   39 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~C   39 (40)
+                      |||||+|    +++|++||+|| ||++|||+++ +++|+|
+T Consensus        48 g~GCP~~----~~~C~shC~Si-Gr~fGyC~g~l~~tc~c   82 (85)
+T tr|A0A059J5P2|   48 GFGCPLN----ERECNSHCQSI-GRKFGYCGGFLRQTCSC   82 (85)
+Confidence            7999999    99999999999 9999999999 999998
+
+
+No 18 
+>tr|A0A059J5P2|A0A059J5P2_9EURO Uncharacterized protein OS=Trichophyton interdigitale MR816 GN=H109_04975 PE=4 SV=1
+Probab=99.43  E-value=1.4e-16  Score=94.99  Aligned_cols=34  Identities=47%  Similarity=1.071  Sum_probs=33.1
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKC   39 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~C   39 (40)
+                      |||||+|    +++|++||+|| ||++|||+++ +++|+|
+T Consensus        48 g~GCP~~----~~~C~shC~Si-Gr~fGyC~g~l~~tc~c   82 (85)
+T tr|A0A059J5P2|   48 GFGCPLN----ERECNSHCQSI-GRKFGYCGGFLRQTCSC   82 (85)
+Confidence            7999999    99999999999 9999999999 999998
+
+
+No 19 
+>sp|P80571|DEFI_MYTGA Defensin MGD-1 (Fragment) OS=Mytilus galloprovincialis GN=FH3 PE=1 SV=2
+Probab=99.36  E-value=1e-15  Score=86.52  Aligned_cols=35  Identities=57%  Similarity=1.300  Sum_probs=33.6
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||.|     ++||+||+||.||-||||++| ++.|+||
+T Consensus         1 gfgcpnn-----yqchrhcksipgrcggycggwhrlrctcy   36 (60)
+T sp|P80571|DEFI    1 GFGCPNN-----YQCHRHCKSIPGRCGGYCGGWHRLRCTCY   36 (60)
+Confidence            7999986     999999999999999999999 9999997
+
+
+No 20 
+>sp|P80571|DEFI_MYTGA Defensin MGD-1 (Fragment) OS=Mytilus galloprovincialis GN=FH3 PE=1 SV=2
+Probab=99.36  E-value=1e-15  Score=86.52  Aligned_cols=35  Identities=57%  Similarity=1.300  Sum_probs=33.6
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||.|     ++||+||+||.||-||||++| ++.|+||
+T Consensus         1 gfgcpnn-----yqchrhcksipgrcggycggwhrlrctcy   36 (60)
+T sp|P80571|DEFI    1 GFGCPNN-----YQCHRHCKSIPGRCGGYCGGWHRLRCTCY   36 (60)
+Confidence            7999986     999999999999999999999 9999997
+
+
+No 21 
+>tr|U1QAH3|U1QAH3_9ACTO Arthropod defensin OS=Actinomyces johnsonii F0542 GN=HMPREF1979_01045 PE=4 SV=1
+Probab=99.34  E-value=1.5e-15  Score=87.70  Aligned_cols=34  Identities=53%  Similarity=1.266  Sum_probs=32.1
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      +|+ |+|    +++|++||+|+ |||||||.++ ++||.||
+T Consensus        33 ~~~-p~n----~~~C~~hC~s~-GYrGG~C~g~~~~~C~Cy   67 (67)
+T tr|U1QAH3|U1QA   33 GFC-PWN----EYQCHEHCRSK-GYRGGYCAGFIALTCHCY   67 (67)
+Confidence            466 998    99999999999 9999999999 9999998
+
+
+No 22 
+>tr|U1QAH3|U1QAH3_9ACTO Arthropod defensin OS=Actinomyces johnsonii F0542 GN=HMPREF1979_01045 PE=4 SV=1
+Probab=99.34  E-value=1.4e-15  Score=87.70  Aligned_cols=34  Identities=53%  Similarity=1.266  Sum_probs=32.1
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      +|+ |+|    +++|++||+|+ |||||||.++ ++||.||
+T Consensus        33 ~~~-p~n----~~~C~~hC~s~-GYrGG~C~g~~~~~C~Cy   67 (67)
+T tr|U1QAH3|U1QA   33 GFC-PWN----EYQCHEHCRSK-GYRGGYCAGFIALTCHCY   67 (67)
+Confidence            466 998    99999999999 9999999999 9999998
+
+
+No 23 
+>tr|Q5QFI4|Q5QFI4_IXORI Defensin (Fragment) OS=Ixodes ricinus PE=2 SV=1
+Probab=99.27  E-value=7.4e-15  Score=70.48  Aligned_cols=23  Identities=57%  Similarity=1.279  Sum_probs=22.4
+
+Q 3e7u              3 GCNGPWDEDDMQCHNHCKSIKGYKGGYC   30 (40)
+Q Consensus         3 gCp~~~~~n~~~C~~HC~s~~GrrGGyC   30 (40)
+                      |||||    |.+||+||+|| +||||||
+T Consensus         1 gcp~n----qgach~hc~si-~rrggyc   23 (23)
+T tr|Q5QFI4|Q5QF    1 GCPFN----QGACHNHCRSI-RRRGGYC   23 (23)
+Confidence            79999    99999999999 9999998
+
+
+No 24 
+>tr|Q5QFI4|Q5QFI4_IXORI Defensin (Fragment) OS=Ixodes ricinus PE=2 SV=1
+Probab=99.27  E-value=7.5e-15  Score=70.48  Aligned_cols=23  Identities=57%  Similarity=1.279  Sum_probs=22.4
+
+Q 3e7u              3 GCNGPWDEDDMQCHNHCKSIKGYKGGYC   30 (40)
+Q Consensus         3 gCp~~~~~n~~~C~~HC~s~~GrrGGyC   30 (40)
+                      |||||    |.+||+||+|| +||||||
+T Consensus         1 gcp~n----qgach~hc~si-~rrggyc   23 (23)
+T tr|Q5QFI4|Q5QF    1 GCPFN----QGACHNHCRSI-RRRGGYC   23 (23)
+Confidence            79999    99999999999 9999998
+
+
+No 25 
+>tr|N6THI6|N6THI6_DENPD Uncharacterized protein (Fragment) OS=Dendroctonus ponderosae GN=D910_10500 PE=4 SV=1
+Probab=99.11  E-value=1.3e-13  Score=82.12  Aligned_cols=30  Identities=40%  Similarity=0.973  Sum_probs=28.6
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |++||+||++||+++ |+|||||++ +++|+|
+T Consensus        53 ~~~NhSACAahCLa~-gkkGG~Cn~-~gVCvC   82 (84)
+T tr|N6THI6|N6TH   53 FSVNHSACAAHCLAQ-GRKGGYCNN-KGVCVC   82 (84)
+Confidence            678999999999999 999999999 899998
+
+
+No 26 
+>tr|N6THI6|N6THI6_DENPD Uncharacterized protein (Fragment) OS=Dendroctonus ponderosae GN=D910_10500 PE=4 SV=1
+Probab=99.11  E-value=1.3e-13  Score=82.12  Aligned_cols=30  Identities=40%  Similarity=0.973  Sum_probs=28.6
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |++||+||++||+++ |+|||||++ +++|+|
+T Consensus        53 ~~~NhSACAahCLa~-gkkGG~Cn~-~gVCvC   82 (84)
+T tr|N6THI6|N6TH   53 FSVNHSACAAHCLAQ-GRKGGYCNN-KGVCVC   82 (84)
+Confidence            678999999999999 999999999 899998
+
+
+No 27 
+>sp|P80033|DEFA_ZOPAT Defensin, isoforms B and C OS=Zophobas atratus PE=1 SV=1
+Probab=99.08  E-value=2.7e-13  Score=73.16  Aligned_cols=30  Identities=37%  Similarity=0.936  Sum_probs=28.4
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      +++|+++|++||+.+ |+|||||++ |.+|+|
+T Consensus        13 ~~~nhsaCaaHCl~~-G~rGGyC~~-k~vCvC   42 (43)
+T sp|P80033|DEFA   13 FGVNHSACAAHCLAR-GRRGGYCNG-KGVCVC   42 (43)
+Confidence            678999999999999 999999999 899998
+
+
+No 28 
+>sp|P80033|DEFA_ZOPAT Defensin, isoforms B and C OS=Zophobas atratus PE=1 SV=1
+Probab=99.08  E-value=2.7e-13  Score=73.16  Aligned_cols=30  Identities=37%  Similarity=0.936  Sum_probs=28.4
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      +++|+++|++||+.+ |+|||||++ |.+|+|
+T Consensus        13 ~~~nhsaCaaHCl~~-G~rGGyC~~-k~vCvC   42 (43)
+T sp|P80033|DEFA   13 FGVNHSACAAHCLAR-GRRGGYCNG-KGVCVC   42 (43)
+Confidence            678999999999999 999999999 899998
+
+
+No 29 
+>tr|T1I7B4|T1I7B4_RHOPR Uncharacterized protein OS=Rhodnius prolixus PE=4 SV=1
+Probab=98.71  E-value=4e-11  Score=72.72  Aligned_cols=29  Identities=38%  Similarity=1.019  Sum_probs=27.4
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |++||++|++||+.+ |+|||||+  +.+|+|
+T Consensus        64 ~~~nhsaCAAHCl~~-G~rGGyC~--~~VCvC   92 (94)
+T tr|T1I7B4|T1I7   64 FGVNHSACAAHCLAR-GNRGGYCN--KAVCVC   92 (94)
+Confidence            789999999999999 99999999  499998
+
+
+No 30 
+>tr|A0A084G2W8|A0A084G2W8_9PEZI Uncharacterized protein OS=Scedosporium apiospermum GN=SAPIO_CDS6842 PE=4 SV=1
+Probab=98.66  E-value=9.5e-11  Score=74.50  Aligned_cols=29  Identities=69%  Similarity=1.571  Sum_probs=27.7
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG   33 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~   33 (40)
+                      |||||.|    +..||+||+|.+|++||||++.
+T Consensus        53 gfgcpgn----ekkchnhcksvkgykggycdgp   81 (129)
+T tr|A0A084G2W8|   53 GFGCPGN----EKKCHNHCKSVKGYKGGYCDGP   81 (129)
+Confidence            7999999    9999999999999999999985
+
+
+No 31 
+>tr|A0A084G2W8|A0A084G2W8_9PEZI Uncharacterized protein OS=Scedosporium apiospermum GN=SAPIO_CDS6842 PE=4 SV=1
+Probab=98.66  E-value=9.5e-11  Score=74.50  Aligned_cols=29  Identities=69%  Similarity=1.571  Sum_probs=27.7
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG   33 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~   33 (40)
+                      |||||.|    +..||+||+|.+|++||||++.
+T Consensus        53 gfgcpgn----ekkchnhcksvkgykggycdgp   81 (129)
+T tr|A0A084G2W8|   53 GFGCPGN----EKKCHNHCKSVKGYKGGYCDGP   81 (129)
+Confidence            7999999    9999999999999999999985
+
+
+No 32 
+>tr|A6RCG3|A6RCG3_AJECN Predicted protein OS=Ajellomyces capsulatus (strain NAm1 / WU24) GN=HCAG_07321 PE=4 SV=1
+Probab=98.44  E-value=1e-09  Score=70.90  Aligned_cols=31  Identities=52%  Similarity=1.326  Sum_probs=29.2
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAK   32 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g   32 (40)
+                      ||.|.| |+.|+..||.||+||+|||||||..
+T Consensus        79 gwscgf-fggndepchqhcksirgyrggycss  109 (143)
+T tr|A6RCG3|A6RC   79 GWSCGF-FGGNDEPCHQHCKSIRGYRGGYCSS  109 (143)
+Confidence            688999 8999999999999999999999986
+
+
+No 33 
+>tr|A6RCG3|A6RCG3_AJECN Predicted protein OS=Ajellomyces capsulatus (strain NAm1 / WU24) GN=HCAG_07321 PE=4 SV=1
+Probab=98.44  E-value=1e-09  Score=70.90  Aligned_cols=31  Identities=52%  Similarity=1.326  Sum_probs=29.2
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAK   32 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g   32 (40)
+                      ||.|.| |+.|+..||.||+||+|||||||..
+T Consensus        79 gwscgf-fggndepchqhcksirgyrggycss  109 (143)
+T tr|A6RCG3|A6RC   79 GWSCGF-FGGNDEPCHQHCKSIRGYRGGYCSS  109 (143)
+Confidence            688999 8999999999999999999999986
+
+
+No 34 
+>tr|B9TXR3|B9TXR3_9HYME Defensin (Fragment) OS=Formica rufibarbis PE=4 SV=1
+Probab=98.29  E-value=3.6e-09  Score=64.50  Aligned_cols=30  Identities=37%  Similarity=0.839  Sum_probs=28.4
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      +++|||+|++||... |..||+|++ .++|+|
+T Consensus        57 ~GV~HSaCAahCi~r-gktGGrCns-~~vCvC   86 (88)
+T tr|B9TXR3|B9TX   57 FGVDHSACAAHCILR-GKTGGRCNS-DRVCVC   86 (88)
+Confidence            678999999999999 999999999 899998
+
+
+No 35 
+>tr|C0NM15|C0NM15_AJECG Putative uncharacterized protein OS=Ajellomyces capsulatus (strain G186AR / H82 / ATCC MYA-2454 / RMSCC 2432) GN=HCBG_04545 PE=4 SV=1
+Probab=98.24  E-value=6.4e-09  Score=70.15  Aligned_cols=31  Identities=52%  Similarity=1.273  Sum_probs=28.7
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAK   32 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g   32 (40)
+                      ||.|.| |+.|+..||.||+||+|||||||.-
+T Consensus       143 gwscgf-fggndepchqhcksirgyrggyckf  173 (203)
+T tr|C0NM15|C0NM  143 GWSCGF-FGGNDEPCHQHCKSIRGYRGGYCKF  173 (203)
+Confidence            688999 8999999999999999999999973
+
+
+No 36 
+>tr|C0NM15|C0NM15_AJECG Putative uncharacterized protein OS=Ajellomyces capsulatus (strain G186AR / H82 / ATCC MYA-2454 / RMSCC 2432) GN=HCBG_04545 PE=4 SV=1
+Probab=98.24  E-value=6.4e-09  Score=70.15  Aligned_cols=31  Identities=52%  Similarity=1.273  Sum_probs=28.7
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAK   32 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g   32 (40)
+                      ||.|.| |+.|+..||.||+||+|||||||.-
+T Consensus       143 gwscgf-fggndepchqhcksirgyrggyckf  173 (203)
+T tr|C0NM15|C0NM  143 GWSCGF-FGGNDEPCHQHCKSIRGYRGGYCKF  173 (203)
+Confidence            688999 8999999999999999999999973
+
+
+No 37 
+>tr|Q6H9L9|Q6H9L9_CRAGI Gigasin 2 protein (Fragment) OS=Crassostrea gigas GN=amp-Gigasin 2 PE=2 SV=1
+Probab=98.24  E-value=6.5e-09  Score=56.99  Aligned_cols=23  Identities=52%  Similarity=1.366  Sum_probs=21.1
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGG   28 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGG   28 (40)
+                      |||||.+    |++|++||+|| |.|.|
+T Consensus        23 gfgcpgd----qyecnrhcrsi-gcrag   45 (45)
+T tr|Q6H9L9|Q6H9   23 GFGCPGD----QYECNRHCRSI-GCRAG   45 (45)
+Confidence            7999999    99999999999 97765
+
+
+No 38 
+>tr|Q6H9L9|Q6H9L9_CRAGI Gigasin 2 protein (Fragment) OS=Crassostrea gigas GN=amp-Gigasin 2 PE=2 SV=1
+Probab=98.24  E-value=6.5e-09  Score=56.99  Aligned_cols=23  Identities=52%  Similarity=1.366  Sum_probs=21.1
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGG   28 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGG   28 (40)
+                      |||||.+    |++|++||+|| |.|.|
+T Consensus        23 gfgcpgd----qyecnrhcrsi-gcrag   45 (45)
+T tr|Q6H9L9|Q6H9   23 GFGCPGD----QYECNRHCRSI-GCRAG   45 (45)
+Confidence            7999999    99999999999 97765
+
+
+No 39 
+>tr|B3RFK4|B3RFK4_9DIPT Defensin (Fragment) OS=Anopheles dirus PE=2 SV=1
+Probab=98.16  E-value=1.2e-08  Score=58.95  Aligned_cols=30  Identities=37%  Similarity=0.982  Sum_probs=27.9
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |++.+++|++||+.. ++|||||+. |.+|+|
+T Consensus        30 fgvg~s~caahciar-r~rggycn~-k~vcvc   59 (62)
+T tr|B3RFK4|B3RF   30 FGVGSSACAAHCIAR-RYRGGYCNS-KTVCVC   59 (62)
+Confidence            667799999999999 999999999 999998
+
+
+No 40 
+>sp|P80407|DEFI_PALPR Defensin OS=Palomena prasina PE=1 SV=1
+Probab=98.04  E-value=3.1e-08  Score=54.14  Aligned_cols=29  Identities=41%  Similarity=1.006  Sum_probs=26.3
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      ..+||++|+.||+.+ |||||.|..  .+|.|
+T Consensus        13 it~N~saCA~HCl~~-~~KGG~Ck~--~vC~C   41 (43)
+T sp|P80407|DEFI   13 ITINHSACAAHCLAK-GYKGGSCKQ--TVCHC   41 (43)
+Confidence            357899999999999 999999997  78887
+
+
+No 41 
+>tr|A0A0K8VKU3|A0A0K8VKU3_BACLA Phormicin (Fragment) OS=Bactrocera latifrons GN=DEFI_1 PE=4 SV=1
+Probab=97.98  E-value=5e-08  Score=62.24  Aligned_cols=30  Identities=37%  Similarity=0.911  Sum_probs=27.4
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |++.|++|++||+-. |.|||||++ +++|.|
+T Consensus        89 fgikhsacaahcllr-gnrggyc~g-~gvc~c  118 (120)
+T tr|A0A0K8VKU3|   89 FGIKHSACAAHCLLR-GNRGGYCNG-RGVCEC  118 (120)
+Confidence            557799999999999 999999999 789988
+
+
+No 42 
+>tr|E2BDP6|E2BDP6_HARSA Putative uncharacterized protein OS=Harpegnathos saltator GN=EAI_11297 PE=4 SV=1
+Probab=97.98  E-value=5.4e-08  Score=55.26  Aligned_cols=29  Identities=34%  Similarity=0.898  Sum_probs=27.0
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |+.|+++|++.|+++ +++||.|.+  ++|+|
+T Consensus        24 fs~~~sacaa~cl~~-~~~gg~c~~--gvc~c   52 (54)
+T tr|E2BDP6|E2BD   24 FSAEHSACAANCLSM-GKAGGRCEN--GVCLC   52 (54)
+Confidence            567899999999999 999999998  89988
+
+
+No 43 
+>tr|B7QGE4|B7QGE4_IXOSC Defensin, putative OS=Ixodes scapularis GN=IscW_ISCW022102 PE=4 SV=1
+Probab=97.93  E-value=8.3e-08  Score=56.77  Aligned_cols=36  Identities=39%  Similarity=1.113  Sum_probs=33.8
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||-.    .-.|...|+......||||+++ ..+|.||
+T Consensus        35 gfgcpks----alscsqqcrennthsggycngpfnivcscy   71 (71)
+T tr|B7QGE4|B7QG   35 GFGCPKS----ALSCSQQCRENNTHSGGYCNGPFNIVCSCY   71 (71)
+Confidence            7999998    8899999999977999999999 9999997
+
+
+No 44 
+>tr|B7QGE4|B7QGE4_IXOSC Defensin, putative OS=Ixodes scapularis GN=IscW_ISCW022102 PE=4 SV=1
+Probab=97.93  E-value=8.3e-08  Score=56.77  Aligned_cols=36  Identities=39%  Similarity=1.113  Sum_probs=33.8
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      |||||-.    .-.|...|+......||||+++ ..+|.||
+T Consensus        35 gfgcpks----alscsqqcrennthsggycngpfnivcscy   71 (71)
+T tr|B7QGE4|B7QG   35 GFGCPKS----ALSCSQQCRENNTHSGGYCNGPFNIVCSCY   71 (71)
+Confidence            7999998    8899999999977999999999 9999997
+
+
+No 45 
+>tr|E0W2M5|E0W2M5_PEDHC Defensin-2, putative OS=Pediculus humanus subsp. corporis GN=Phum_PHUM595870 PE=4 SV=1
+Probab=97.88  E-value=1e-07  Score=60.51  Aligned_cols=29  Identities=41%  Similarity=0.947  Sum_probs=26.2
+
+Q 3e7u              8 WDEDDMQCHNHCKS--IKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s--~~GrrGGyC~g~~~~C~C   39 (40)
+                      .+.|||||++||+.  . |||||.|.+  ++|.|
+T Consensus        81 gSlNHSACAAhCia~~K-gykGGrC~n--gvCrC  111 (113)
+T tr|E0W2M5|E0W2   81 GSLNHSACAAHCIALRK-GYKGGRCYN--GVCRC  111 (113)
+Confidence            36789999999999  5 899999997  99988
+
+
+No 46 
+>tr|A0A0K8L7T6|A0A0K8L7T6_9EURO Defensin-1 OS=Neosartorya udagawae GN=AUD_3107 PE=4 SV=1
+Probab=97.78  E-value=2.4e-07  Score=61.80  Aligned_cols=29  Identities=52%  Similarity=1.269  Sum_probs=26.5
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKG-YKGGYCAKG   33 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~G-rrGGyC~g~   33 (40)
+                      |||||.+    .++|..||+|..| |.||||++-
+T Consensus        54 gfgcpgd----ryqcsehcrslgggrtggycggh   83 (174)
+T tr|A0A0K8L7T6|   54 GFGCPGD----RYQCSEHCRSLGGGRTGGYCGGH   83 (174)
+Confidence            7999999    9999999999953 999999985
+
+
+No 47 
+>tr|A0A0K8L7T6|A0A0K8L7T6_9EURO Defensin-1 OS=Neosartorya udagawae GN=AUD_3107 PE=4 SV=1
+Probab=97.78  E-value=2.4e-07  Score=61.80  Aligned_cols=29  Identities=52%  Similarity=1.269  Sum_probs=26.5
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKG-YKGGYCAKG   33 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~G-rrGGyC~g~   33 (40)
+                      |||||.+    .++|..||+|..| |.||||++-
+T Consensus        54 gfgcpgd----ryqcsehcrslgggrtggycggh   83 (174)
+T tr|A0A0K8L7T6|   54 GFGCPGD----RYQCSEHCRSLGGGRTGGYCGGH   83 (174)
+Confidence            7999999    9999999999953 999999985
+
+
+No 48 
+>tr|B7QIW0|B7QIW0_IXOSC Putative uncharacterized protein OS=Ixodes scapularis GN=IscW_ISCW023545 PE=4 SV=1
+Probab=97.76  E-value=2.6e-07  Score=54.92  Aligned_cols=34  Identities=41%  Similarity=0.943  Sum_probs=29.4
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG--GFVCKC   39 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~--~~~C~C   39 (40)
+                      .||||++    +.+|.+||.++ |++-|.|.++  .-.|+|
+T Consensus        32 ~~GCP~~----~~~C~NHC~~~-G~~~GEC~~~~~~~~~~~   67 (71)
+T tr|B7QIW0|B7QI   32 NWGCPEN----EIACSNHCFSI-GYRYGECRNFPFFTDCTC   67 (71)
+Confidence            3899999    99999999999 9999999997  444554
+
+
+No 49 
+>tr|B7QIW0|B7QIW0_IXOSC Putative uncharacterized protein OS=Ixodes scapularis GN=IscW_ISCW023545 PE=4 SV=1
+Probab=97.76  E-value=2.6e-07  Score=54.92  Aligned_cols=34  Identities=41%  Similarity=0.943  Sum_probs=29.4
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG--GFVCKC   39 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~--~~~C~C   39 (40)
+                      .||||++    +.+|.+||.++ |++-|.|.++  .-.|+|
+T Consensus        32 ~~GCP~~----~~~C~NHC~~~-G~~~GEC~~~~~~~~~~~   67 (71)
+T tr|B7QIW0|B7QI   32 NWGCPEN----EIACSNHCFSI-GYRYGECRNFPFFTDCTC   67 (71)
+Confidence            3899999    99999999999 9999999997  444554
+
+
+No 50 
+>tr|E2AKI0|E2AKI0_CAMFO Putative uncharacterized protein (Fragment) OS=Camponotus floridanus GN=EAG_14527 PE=4 SV=1
+Probab=97.74  E-value=3.1e-07  Score=53.33  Aligned_cols=28  Identities=29%  Similarity=0.729  Sum_probs=26.4
+
+Q 3e7u              9 DEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         9 ~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      ++||++|++.|+++ .||||.|..  ++|+|
+T Consensus        32 sinhsaca~rcl~q-rrkggrc~d--gicvc   59 (61)
+T tr|E2AKI0|E2AK   32 SINHSACAARCLTQ-RRKGGRCRD--GICVC   59 (61)
+Confidence            67899999999999 999999998  89988
+
+
+No 51 
+>tr|D6WVN3|D6WVN3_TRICA Putative uncharacterized protein OS=Tribolium castaneum GN=TcasGA2_TC006250 PE=4 SV=1
+Probab=97.71  E-value=3.7e-07  Score=58.95  Aligned_cols=30  Identities=33%  Similarity=0.864  Sum_probs=27.7
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      +..||.+|++||+.. ..|||||++ |.+|+|
+T Consensus       101 iklnhaacaahclyl-kkrggycnd-kavcvc  130 (132)
+T tr|D6WVN3|D6WV  101 IKLNHAACAAHCLYL-KKRGGYCND-KAVCVC  130 (132)
+Confidence            457899999999999 999999999 999998
+
+
+No 52 
+>sp|P0CF77|DEF_TITDI Tddefensin OS=Tityus discrepans PE=2 SV=1
+Probab=97.68  E-value=4.6e-07  Score=48.10  Aligned_cols=32  Identities=34%  Similarity=0.887  Sum_probs=29.6
+
+Q 3e7u              4 CNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         4 Cp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      ||-|    ..+|-+.|+.. ||.||||++. +.+|.|.
+T Consensus         3 cprn----peacynyclrt-grpggycggrsritcfcf   35 (36)
+T sp|P0CF77|DEF_    3 CPRN----PEACYNYCLRT-GRPGGYCGGRSRITCFCF   35 (36)
+Confidence            7887    99999999999 9999999999 8999884
+
+
+No 53 
+>sp|P0CF77|DEF_TITDI Tddefensin OS=Tityus discrepans PE=2 SV=1
+Probab=97.68  E-value=4.6e-07  Score=48.10  Aligned_cols=32  Identities=34%  Similarity=0.887  Sum_probs=29.6
+
+Q 3e7u              4 CNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKCY   40 (40)
+Q Consensus         4 Cp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~Cy   40 (40)
+                      ||-|    ..+|-+.|+.. ||.||||++. +.+|.|.
+T Consensus         3 cprn----peacynyclrt-grpggycggrsritcfcf   35 (36)
+T sp|P0CF77|DEF_    3 CPRN----PEACYNYCLRT-GRPGGYCGGRSRITCFCF   35 (36)
+Confidence            7887    99999999999 9999999999 8999884
+
+
+No 54 
+>tr|A0A034WWA1|A0A034WWA1_BACDO Defensin-C OS=Bactrocera dorsalis GN=DEFC PE=4 SV=1
+Probab=97.64  E-value=5.1e-07  Score=58.33  Aligned_cols=27  Identities=41%  Similarity=0.996  Sum_probs=25.2
+
+Q 3e7u             12 DMQCHNHCKSIKGY-KGGYCAKGGFVCKCY   40 (40)
+Q Consensus        12 ~~~C~~HC~s~~Gr-rGGyC~g~~~~C~Cy   40 (40)
+                      ...|..||.++ || |||||+. +.+|.||
+T Consensus       101 ~g~C~~~C~s~-G~~~GGyCn~-~s~C~C~  128 (128)
+T tr|A0A034WWA1|  101 SGLCSSYCISL-GYIRGGYCNI-WSACMCV  128 (128)
+Confidence            67899999999 99 9999999 7999997
+
+
+No 55 
+>tr|K1Q8B1|K1Q8B1_CRAGI Uncharacterized protein OS=Crassostrea gigas GN=CGI_10009488 PE=4 SV=1
+Probab=97.60  E-value=8.1e-07  Score=64.88  Aligned_cols=33  Identities=48%  Similarity=1.189  Sum_probs=29.0
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |||||+|    .++|+.||+|| ..|.|||.-. ..|+|
+T Consensus        44 gfgcpln----kyqcnehcqsi-scragyceyl-frctc   76 (415)
+T tr|K1Q8B1|K1Q8   44 GFGCPLN----KYQCNEHCQSI-SCRAGYCEYL-FRCTC   76 (415)
+Confidence            7999999    99999999999 9999999984 44444
+
+
+No 56 
+>tr|K1Q8B1|K1Q8B1_CRAGI Uncharacterized protein OS=Crassostrea gigas GN=CGI_10009488 PE=4 SV=1
+Probab=97.60  E-value=8.1e-07  Score=64.88  Aligned_cols=33  Identities=48%  Similarity=1.189  Sum_probs=29.0
+
+Q 3e7u              1 GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         1 gfgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |||||+|    .++|+.||+|| ..|.|||.-. ..|+|
+T Consensus        44 gfgcpln----kyqcnehcqsi-scragyceyl-frctc   76 (415)
+T tr|K1Q8B1|K1Q8   44 GFGCPLN----KYQCNEHCQSI-SCRAGYCEYL-FRCTC   76 (415)
+Confidence            7999999    99999999999 9999999984 44444
+
+
+No 57 
+>tr|A0A0M9A1F6|A0A0M9A1F6_9HYME Defensin-2 (Fragment) OS=Melipona quadrifasciata GN=WN51_13278 PE=4 SV=1
+Probab=97.51  E-value=1.3e-06  Score=52.12  Aligned_cols=29  Identities=31%  Similarity=0.706  Sum_probs=27.2
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      .++||++|+..|+++ +|+||.|.+  ++|+|
+T Consensus        42 lsinh~aca~rclaq-rrkgg~c~n--gvcic   70 (72)
+T tr|A0A0M9A1F6|   42 LSINHSACATRCLAQ-RRKGGSCQN--GVCIC   70 (72)
+Confidence            468999999999999 999999998  89998
+
+
+No 58 
+>tr|I2HB38|I2HB38_HARSA Defensin-1a OS=Harpegnathos saltator PE=4 SV=1
+Probab=97.31  E-value=4.4e-06  Score=50.39  Aligned_cols=29  Identities=28%  Similarity=0.721  Sum_probs=26.8
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |+.|.++|++.|+.+ .||||.|.+  ++|+|
+T Consensus        47 fsfnnsacaakclvq-rrrggscsg--gvcvc   75 (77)
+T tr|I2HB38|I2HB   47 FSFNNSACAAKCLVQ-RRRGGSCSG--GVCVC   75 (77)
+Confidence            567799999999999 999999999  89988
+
+
+No 59 
+>tr|A0A026WVD4|A0A026WVD4_CERBI Defensin-2 OS=Cerapachys biroi GN=X777_15297 PE=4 SV=1
+Probab=97.24  E-value=6.6e-06  Score=51.04  Aligned_cols=29  Identities=24%  Similarity=0.681  Sum_probs=26.7
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      .++||++|++.|+.+ .+|||.|..  ++|+|
+T Consensus        63 lsinhsacaakclaq-rrrggrcrd--gicic   91 (93)
+T tr|A0A026WVD4|   63 LSINHSACAAKCLAQ-RRRGGRCRD--GICIC   91 (93)
+Confidence            367899999999999 999999998  89988
+
+
+No 60 
+>sp|P81462|DEFI_BOMPA Defensin OS=Bombus pascuorum PE=1 SV=1
+Probab=97.04  E-value=1.9e-05  Score=44.86  Aligned_cols=26  Identities=35%  Similarity=0.945  Sum_probs=24.1
+
+Q 3e7u             11 DDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus        11 n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      .|++|++.|+|+ |..||.|.+  ++|.|
+T Consensus        13 ehsacaanclsm-gkaggrcen--giclc   38 (51)
+T sp|P81462|DEFI   13 EHSACAANCLSM-GKAGGRCEN--GICLC   38 (51)
+Confidence            589999999999 999999998  88877
+
+
+No 61 
+>tr|R4G4L8|R4G4L8_RHOPR Putative defensin c OS=Rhodnius prolixus PE=2 SV=1
+Probab=96.85  E-value=4.4e-05  Score=49.60  Aligned_cols=29  Identities=38%  Similarity=1.110  Sum_probs=25.9
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |..||.+|++||+.. ||+||.|.+  .+|.|
+T Consensus        94 ft~nhaacaahc~fl-gykggncqd--tichc  122 (124)
+T tr|R4G4L8|R4G4   94 FTTNHAACAAHCIFL-GYKGGNCQD--TICHC  122 (124)
+Confidence            457899999999999 999999998  67776
+
+
+No 62 
+>sp|A9QLM3|KA11L_LYCMC Toxin KTx8 OS=Lychas mucronatus PE=2 SV=1
+Probab=96.50  E-value=0.00018  Score=42.78  Aligned_cols=33  Identities=42%  Similarity=0.813  Sum_probs=30.6
+
+Q 3e7u              3 GCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKC   39 (40)
+Q Consensus         3 gCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~C   39 (40)
+                      |||+.    ++.|+..|++.+--+-|.|.++ |.+|.|
+T Consensus        30 gcp~s----d~lcak~ck~~kfgktgrctgpnk~~ckc   63 (65)
+T sp|A9QLM3|KA11   30 GCPFS----DSLCAKRCKDMKFGKTGRCTGPNKTVCKC   63 (65)
+Confidence            89999    9999999999966788999999 999998
+
+
+No 63 
+>tr|G0MWM7|G0MWM7_CAEBE Putative uncharacterized protein OS=Caenorhabditis brenneri GN=CAEBREN_00173 PE=4 SV=1
+Probab=96.50  E-value=0.00019  Score=45.74  Aligned_cols=37  Identities=27%  Similarity=0.866  Sum_probs=33.4
+
+Q 3e7u              2 FGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKC   39 (40)
+Q Consensus         2 fgCp~~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~C   39 (40)
+                      +||.. .+.|+.+|+.||+......||.|-+. |++|-|
+T Consensus        61 ygcgy-lssnhaecaehcrtvekchggkcvgrlkqtcwc   98 (106)
+T tr|G0MWM7|G0MW   61 YGCGY-LSSNHAECAEHCRTVEKCHGGKCVGRLKQTCWC   98 (106)
+Confidence            68887 68889999999999867999999999 999987
+
+
+No 64 
+>tr|E9IDN0|E9IDN0_SOLIN Putative uncharacterized protein (Fragment) OS=Solenopsis invicta GN=SINV_16253 PE=4 SV=1
+Probab=96.39  E-value=0.00028  Score=45.72  Aligned_cols=30  Identities=37%  Similarity=0.798  Sum_probs=26.6
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      .+++|++|++||.-. |..||.|.. .++|.|
+T Consensus        88 lgvdhsacaahcilk-gktgghcss-tgvcnc  117 (119)
+T tr|E9IDN0|E9ID   88 LGVDHSACAAHCILK-GKTGGHCSS-TGVCNC  117 (119)
+Confidence            357899999999999 999999998 678877
+
+
+No 65 
+>tr|C3YS52|C3YS52_BRAFL Putative uncharacterized protein OS=Branchiostoma floridae GN=BRAFLDRAFT_122258 PE=4 SV=1
+Probab=96.38  E-value=0.00029  Score=47.71  Aligned_cols=23  Identities=43%  Similarity=1.106  Sum_probs=20.6
+
+Q 3e7u             10 EDDMQCHNHCKSIKGYKGGYCAKG   33 (40)
+Q Consensus        10 ~n~~~C~~HC~s~~GrrGGyC~g~   33 (40)
+                      ..++.|++||+.. |||||||+..
+T Consensus        79 fgdslcaahclal-gyrggycddr  101 (169)
+T tr|C3YS52|C3YS   79 FGDSLCAAHCLAL-GYRGGYCDDR  101 (169)
+Confidence            4489999999999 9999999874
+
+
+No 66 
+>tr|A0A0A9XAY7|A0A0A9XAY7_LYGHE Defensin (Fragment) OS=Lygus hesperus GN=DEFI_3 PE=4 SV=1
+Probab=96.33  E-value=0.00034  Score=45.61  Aligned_cols=28  Identities=36%  Similarity=0.977  Sum_probs=25.2
+
+Q 3e7u              9 DEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         9 ~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      +.|+..|++||.+. |.|||.|.|  -+|.|
+T Consensus        93 sp~havcaahc~al-g~rggec~g--tvchc  120 (122)
+T tr|A0A0A9XAY7|   93 TPNHAVCAAHCIAL-GKRGGECKG--TVCHC  120 (122)
+Confidence            45789999999999 999999999  78877
+
+
+No 67 
+>tr|E2BT13|E2BT13_HARSA Royalisin (Fragment) OS=Harpegnathos saltator GN=EAI_00662 PE=4 SV=1
+Probab=95.96  E-value=0.0011  Score=36.38  Aligned_cols=22  Identities=41%  Similarity=0.963  Sum_probs=20.1
+
+Q 3e7u              4 CNGPWDEDDMQCHNHCKSIKGYKGGYC   30 (40)
+Q Consensus         4 Cp~~~~~n~~~C~~HC~s~~GrrGGyC   30 (40)
+                      |-|.    +++|.+.|+|+ |..||.|
+T Consensus        18 cefs----dsacsanclsm-gkagghc   39 (39)
+T tr|E2BT13|E2BT   18 CEFS----DSACSANCLSM-GKAGGHC   39 (39)
+Confidence            6677    99999999999 9999987
+
+
+No 68 
+>tr|C3Z4F2|C3Z4F2_BRAFL Putative uncharacterized protein OS=Branchiostoma floridae GN=BRAFLDRAFT_96429 PE=4 SV=1
+Probab=95.79  E-value=0.0017  Score=41.84  Aligned_cols=32  Identities=34%  Similarity=0.973  Sum_probs=27.7
+
+Q 3e7u              7 PWDEDDMQCHNHCKSIKGYKGGYCAKG-GFVCKC   39 (40)
+Q Consensus         7 ~~~~n~~~C~~HC~s~~GrrGGyC~g~-~~~C~C   39 (40)
+                      ||+...++|.+||+.. ||.||.|+.- ..+|.|
+T Consensus        76 nfgdqnsactahclvl-gysgghcnshddnvcac  108 (109)
+T tr|C3Z4F2|C3Z4   76 NFGDQNSACTAHCLVL-GYSGGHCNSHDDNVCAC  108 (109)
+Confidence            4556679999999999 9999999987 778876
+
+
+No 69 
+>tr|A0A072U0T0|A0A072U0T0_MEDTR Nodule Cysteine-Rich (NCR) secreted peptide OS=Medicago truncatula GN=MTR_7g056683 PE=4 SV=1
+Probab=95.47  E-value=0.0036  Score=34.14  Aligned_cols=32  Identities=50%  Similarity=1.174  Sum_probs=25.8
+
+Q 3e7u              3 GCNGPWDEDDMQCHNHCKSIKG-YKGGYCAKGGFVCKC   39 (40)
+Q Consensus         3 gCp~~~~~n~~~C~~HC~s~~G-rrGGyC~g~~~~C~C   39 (40)
+                      .||..    ..+|+.||+.. | -+||.|..-..+|-|
+T Consensus         3 acpgg----nrqcnqhcket-gytkgghcrdegvvccc   35 (37)
+T tr|A0A072U0T0|    3 ACPGG----NRQCNQHCKET-GYTKGGHCRDEGVVCCC   35 (37)
+Confidence            47887    78999999999 7 689999875556655
+
+
+No 70 
+>tr|M1D0T0|M1D0T0_SOLTU Uncharacterized protein OS=Solanum tuberosum GN=PGSC0003DMG400030677 PE=4 SV=1
+Probab=95.16  E-value=0.0042  Score=35.62  Aligned_cols=29  Identities=34%  Similarity=0.794  Sum_probs=25.5
+
+Q 3e7u             11 DDMQCHNHCKSIKGYKGGYCAKGGFVCKCY   40 (40)
+Q Consensus        11 n~~~C~~HC~s~~GrrGGyC~g~~~~C~Cy   40 (40)
+                      .++.|++-|+.. |+.||.|.+++..|.|.
+T Consensus        27 ~d~NCa~vCr~E-Gf~gG~C~G~~RrC~C~   55 (58)
+T tr|M1D0T0|M1D0   27 SDSNCANVCRTE-GFPGGNCRGFRRRCFCT   55 (58)
+Confidence            368999999999 99999999997778773
+
+
+No 71 
+>tr|B2BA88|B2BA88_LILLO LLA-1440 (Fragment) OS=Lilium longiflorum PE=2 SV=1
+Probab=94.69  E-value=0.013  Score=32.19  Aligned_cols=27  Identities=41%  Similarity=0.862  Sum_probs=24.5
+
+Q 3e7u             12 DMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus        12 ~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      +..|++-|.+. |+.||.|.+|+..|.|
+T Consensus         7 ~~ncanv~~~e-~f~ggkc~gfrrrcfc   33 (37)
+T tr|B2BA88|B2BA    7 DTNCANVCHSE-GFSGGKCRGFRRRCFC   33 (37)
+Confidence            57899999999 9999999999888876
+
+
+No 72 
+>tr|V5LF08|V5LF08_CITLA Defensin-like protein 4 OS=Citrullus lanatus GN=PDF2.4 PE=2 SV=1
+Probab=94.27  E-value=0.019  Score=35.35  Aligned_cols=28  Identities=32%  Similarity=0.799  Sum_probs=24.9
+
+Q 3e7u             11 DDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus        11 n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |+..|++-|++. |+.||.|.+++..|-|
+T Consensus        43 ~~~NCasvC~~e-GF~GG~C~g~rrRC~C   70 (75)
+T tr|V5LF08|V5LF   43 SSTNCASVCKTE-GFTGGHCRGLRRRCYC   70 (75)
+Confidence            478899999999 9999999998777766
+
+
+No 73 
+>tr|A0A072TLP4|A0A072TLP4_MEDTR Defensin-like protein OS=Medicago truncatula GN=MTR_8g012760 PE=4 SV=1
+Probab=93.98  E-value=0.026  Score=34.38  Aligned_cols=31  Identities=35%  Similarity=0.873  Sum_probs=25.6
+
+Q 3e7u             10 EDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY   40 (40)
+Q Consensus        10 ~n~~~C~~HC~s~~GrrGGyC~g~~~~C~Cy   40 (40)
+                      +|+++|..||.+...=.-|||.+....|.||
+T Consensus        37 ~nn~~C~~~Ci~~era~~G~C~g~y~~CfC~   67 (70)
+T tr|A0A072TLP4|   37 INNSQCRDHCINNERANDGYCAGGYRFCFCF   67 (70)
+Confidence            3589999999997466789999986788876
+
+
+No 74 
+>tr|A0A0E0DB27|A0A0E0DB27_9ORYZ Uncharacterized protein OS=Oryza meridionalis PE=4 SV=1
+Probab=91.86  E-value=0.16  Score=35.66  Aligned_cols=26  Identities=35%  Similarity=0.837  Sum_probs=23.3
+
+Q 3e7u             13 MQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus        13 ~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      ..|++-|+.. |+.||.|.+|+..|.|
+T Consensus       153 ancanvclte-gfsggkcsgfrrrcmc  178 (182)
+T tr|A0A0E0DB27|  153 ANCANVCLTE-GFSGGKCSGFRRRCMC  178 (182)
+Confidence            4699999999 9999999999878876
+
+
+No 75 
+>tr|D0N3K2|D0N3K2_PHYIT Putative uncharacterized protein OS=Phytophthora infestans (strain T30-4) GN=PITG_05106 PE=4 SV=1
+Probab=80.66  E-value=2.9  Score=28.05  Aligned_cols=20  Identities=30%  Similarity=0.830  Sum_probs=18.3
+
+Q 3e7u              3 GCNGPWDEDDMQCHNHCKSI   22 (40)
+Q Consensus         3 gCp~~~~~n~~~C~~HC~s~   22 (40)
+                      -||-||...++.|-+||+-.
+T Consensus        65 fcpqnwtlehmsclahclhl   84 (111)
+T tr|D0N3K2|D0N3   65 FCPQNWTLEHMSCLAHCLHL   84 (111)
+Confidence            49999999999999999865
+
+
+No 76 
+>tr|Q9XHE3|Q9XHE3_CAPCH Putative gamma-thionin OS=Capsicum chinense PE=2 SV=1
+Probab=77.37  E-value=3.4  Score=27.45  Aligned_cols=30  Identities=27%  Similarity=0.586  Sum_probs=24.7
+
+Q 3e7u             10 EDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus        10 ~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      .+++.|..-|+...++.+|.|..+-..|.|
+T Consensus        42 ~~d~~C~k~C~~~ekFtdGHCski~RrClC   71 (107)
+T tr|Q9XHE3|Q9XH   42 ITDPPCRKACITKEKFTDGHCSKILRRCLC   71 (107)
+Confidence            458999999998339999999998666766
+
+
+No 77 
+>tr|G5A1R4|G5A1R4_PHYSP Putative uncharacterized protein (Fragment) OS=Phytophthora sojae (strain P6497) GN=PHYSODRAFT_418793 PE=4 SV=1
+Probab=74.63  E-value=5.9  Score=27.79  Aligned_cols=20  Identities=30%  Similarity=0.845  Sum_probs=18.0
+
+Q 3e7u              3 GCNGPWDEDDMQCHNHCKSI   22 (40)
+Q Consensus         3 gCp~~~~~n~~~C~~HC~s~   22 (40)
+                      -||-.|...+++|-+||+-.
+T Consensus       105 fcpqswtlehmaclahclhl  124 (148)
+T tr|G5A1R4|G5A1  105 FCPQSWTLEHMACLAHCLHL  124 (148)
+Confidence            48999999999999999865
+
+
+No 78 
+>tr|A0A0P4VSM3|A0A0P4VSM3_9HEMI Putative defensin OS=Rhodnius neglectus PE=2 SV=1
+Probab=64.67  E-value=14  Score=24.52  Aligned_cols=30  Identities=30%  Similarity=0.773  Sum_probs=22.8
+
+Q 3e7u              8 WDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKC   39 (40)
+Q Consensus         8 ~~~n~~~C~~HC~s~~GrrGGyC~g~~~~C~C   39 (40)
+                      |+...+.|.+||.-...-+||.|--  ..|+|
+T Consensus        55 fgfstssckshcvhvakekggrcfr--nkcvc   84 (94)
+T tr|A0A0P4VSM3|   55 FGFSTSSCKSHCVHVAKEKGGRCFR--NKCVC   84 (94)
+Confidence            3445789999999886689999964  45655
+
+
+Done!

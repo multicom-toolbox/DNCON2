@@ -1,0 +1,688 @@
+Started [../scripts/dncon2-main.pl]: Fri Sep 22 21:21:26 2017
+
+Input: ./input/3e7u.fasta
+L    : 40
+Seq  : GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY
+
+[[Executing: mkdir -p ./output/3e7u/]]
+[[Executing: cp ./input/3e7u.fasta ./output/3e7u//]]
+[[Executing: echo ">3e7u" > ./output/3e7u//3e7u.fasta]]
+[[Executing: echo "GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY" >> ./output/3e7u//3e7u.fasta]]
+
+
+Generating PSSM..
+[[Executing: mkdir -p /home/badri/DNCON2/dry-run/output/3e7u/pssm]]
+[[Executing: cp ../3e7u.fasta ./]]
+Running PSI-Blast with nr90...
+[[Executing: /home/badri/ncbi-blast-2.2.25+/bin/psiblast -query 3e7u.fasta -evalue .001 -inclusion_ethresh .002 -db /home/badri/databases/nr90-2012/nr90 -num_iterations 3 -outfmt 0 -out 3e7u.psiblast.output -seg yes -out_ascii_pssm 3e7u.pssm]]
+Warning: lcl|Query_1 3e7u: Warning: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics Warning: Frequency ratios for PSSM are all zeros, frequency ratios for BLOSUM62 will be used during traceback in composition based statistics 
+
+
+Predicting secondary structure and solvent accessibility using SCRATCH..
+[[Executing: mkdir -p /home/badri/DNCON2/dry-run/output/3e7u/ss_sa]]
+[[Executing: cp ../3e7u.fasta ./]]
+[[Executing: /home/badri/SCRATCH-1D_1.1/bin/run_SCRATCH-1D_predictors.sh 3e7u.fasta 3e7u 4]]
+
+###################################
+#                                 #
+#  SCRATCH-1D release 1.1 (2015)  #
+#                                 #
+###################################
+
+[SCRATCH-1D_predictions.pl] 1 protein sequence(s) found
+[SCRATCH-1D_predictions.pl] generating sequence profiles...
+[SCRATCH-1D_predictions.pl] running SCRATCH-1D predictors...
+[SCRATCH-1D_predictions.pl] running homology analysis...
+[SCRATCH-1D_predictions.pl] writing SSpro predictions...
+[SCRATCH-1D_predictions.pl] writing SSpro8 predictions...
+[SCRATCH-1D_predictions.pl] writing ACCpro predictions...
+[SCRATCH-1D_predictions.pl] writing ACCpro20 predictions...
+[SCRATCH-1D_predictions.pl] job successfully completed!
+
+[[Executing: cp /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.fasta /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.ss_sa]]
+[[Executing: echo ">3e7u" > /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.ss_sa]]
+[[Executing: echo "GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY" >> /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.ss_sa]]
+[[Executing: tail -n 1 /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.ss >> /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.ss_sa]]
+[[Executing: tail -n 1 /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.acc >> /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.ss_sa]]
+[[Executing: sed -i 's/-/b/g' /home/badri/DNCON2/dry-run/output/3e7u/ss_sa/3e7u.ss_sa]]
+Predicted SS and SA:
+>3e7u
+GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY
+CCCECCCCCECHHHHHHHHHHCCCCCCEEEECCCCEEEEC
+eebbebeeeeeeeebeeebeeeeeeebbebbeebeebeee
+
+
+Predicting secondary structure and solvent accessibility using PSIPRED..
+[[Executing: mkdir -p /home/badri/DNCON2/dry-run/output/3e7u/psipred]]
+[[Executing: echo ">3e7u" > ./3e7u.fasta]]
+[[Executing: echo "GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY" >> ./3e7u.fasta]]
+[[Executing: /home/badri/metapsicov/runpsipredandsolv 3e7u.fasta]]
+Running PSI-BLAST with sequence 3e7u.fasta ...
+Predicting secondary structure...
+Pass1 ...
+Pass2 ...
+Solvation pass ...
+Cleaning up ...
+Final output files: 3e7u.ss2 3e7u.horiz 3e7u.solv
+Finished.
+
+
+Generating alignments..
+[[Executing: mkdir -p alignments]]
+[[Executing: /home/badri/DNCON2/scripts/generate-alignments.pl 3e7u.fasta alignments]]
+Started [/home/badri/DNCON2/scripts/generate-alignments.pl]: Fri Sep 22 21:40:00 2017
+Starting job hhb-cov60.sh ..
+running hhblits job hhb-cov60..
+Wait until all HHblits jobs are done ..
+1 jobs running currently
+hhblits hhb-cov60 job done.
+0 jobs running currently
+
+Alignment Summary:
+L = 40
+221 hhb-cov60.aln
+
+Copying hhb-cov60.aln as 3e7u.aln
+HHblits jobs have enough alignments! Not running JackHmmer!
+
+Finished [/home/badri/DNCON2/scripts/generate-alignments.pl]: Fri Sep 22 21:42:46 2017
+
+
+Generate alignment stats ..
+[[Executing: mkdir -p alnstat]]
+[[Executing: cp alignments/3e7u.aln ./alnstat/]]
+[[Executing: cp alignments/3e7u.aln ./alnstat/]]
+[[Executing: /home/badri/metapsicov/bin/alnstats 3e7u.aln 3e7u.colstats 3e7u.pairstats]]
+
+
+Contact Predictions ..
+[[Executing: mkdir -p psicov]]
+[[Executing: mkdir -p ccmpred]]
+[[Executing: mkdir -p freecontact]]
+
+Running PSICOV, CCmpred, and FreeContact parallely..
+[[Executing: /home/badri/DNCON2/scripts/run-ccmpred-freecontact-psicov.pl alignments/3e7u.aln psicov ccmpred freecontact]]
+Started [/home/badri/DNCON2/scripts/run-ccmpred-freecontact-psicov.pl]: Fri Sep 22 21:42:48 2017
+Starting job 3e7u-r0.01.sh ..
+Starting job 3e7u-r0.001.sh ..
+Starting job 3e7u-d0.03.sh ..
+Starting job 3e7u-ccmpred.sh ..
+Starting job 3e7u-freecontact.sh ..
+running freecontact ..
+/usr/bin/freecontact: Symbol `_ZN11xercesc_3_16XMLUni18fgXercesLoadSchemaE' has different size in shared object, consider re-linking
+freecontact job done.
+
+Wait for max 24 hours until all jobs are done ..
+
+Attempting to kill psicov processes that aren't finished..
+
+Checking FreeContact prediction..
+
+Checking CCMpred prediction..
+
+Checking PSICOV predictions..
+Looks like PSICOV 'd-0.03' option has already finished!
+
+Finished [/home/badri/DNCON2/scripts/run-ccmpred-freecontact-psicov.pl]: Fri Sep 22 21:43:18 2017
+
+
+Verify coevolution-based contact predictions ..
+
+
+Generating feature file..
+/home/badri/DNCON2/dry-run/output/3e7u
+[[Executing: /home/badri/DNCON2/scripts/generate-dncon2-features.pl ./3e7u.fasta ./pssm/3e7u.pssm ./ss_sa/3e7u.ss_sa ./alnstat/3e7u.colstats ./alnstat/3e7u.pairstats ./freecontact/3e7u.freecontact.rr ./ccmpred/3e7u.ccmpred ./psicov/3e7u.psicov.rr ./psipred/3e7u.ss2 ./psipred/3e7u.solv > feat-3e7u.txt]]
+Strip leading spaces from feature files..
+[[Executing: sed -i 's/^ *//g' feat-3e7u.txt]]
+
+
+Predict RR from features
+[[Executing: /home/badri/DNCON2/scripts/predict-rr-from-features.sh feat-3e7u.txt 3e7u.rr.raw 3e7u.feat.stage2.txt]]
+# Predict stage1 coevolution-based features (and prepare stage2 feature file)..
+
+Running prediction using coevo-60A .. 
+Using TensorFlow backend.
+/home/badri/DNCON2/scripts/libcnnpredict.py:116: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same", input_shape=(50, 50, 5...)`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same', input_shape=X[0, :, :, :].shape))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(1, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+2017-09-22 21:43:53.037345: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:43:53.037482: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:43:53.037534: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+SCRIPT        : /home/badri/DNCON2/scripts/cnn-predict-and-append-to-X.py
+dir_config    : /home/badri/DNCON2/scripts/../model-config-n-weights
+file_weights  : /home/badri/DNCON2/scripts/../model-config-n-weights/stage1-60A.hdf5
+string_header : 60A
+fileX         : feat-3e7u.txt
+fileX_stage2  : 3e7u.feat.stage2.txt
+
+
+Running prediction using coevo-75A .. 
+Using TensorFlow backend.
+/home/badri/DNCON2/scripts/libcnnpredict.py:116: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same", input_shape=(50, 50, 5...)`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same', input_shape=X[0, :, :, :].shape))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(1, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+2017-09-22 21:44:04.414665: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:04.414805: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:04.414857: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+SCRIPT        : /home/badri/DNCON2/scripts/cnn-predict-and-append-to-X.py
+dir_config    : /home/badri/DNCON2/scripts/../model-config-n-weights
+file_weights  : /home/badri/DNCON2/scripts/../model-config-n-weights/stage1-75A.hdf5
+string_header : 75A
+fileX         : feat-3e7u.txt
+fileX_stage2  : 3e7u.feat.stage2.txt
+
+
+Running prediction using coevo-80A .. 
+Using TensorFlow backend.
+/home/badri/DNCON2/scripts/libcnnpredict.py:116: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same", input_shape=(50, 50, 5...)`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same', input_shape=X[0, :, :, :].shape))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(1, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+2017-09-22 21:44:07.493957: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:07.494236: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:07.494293: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+SCRIPT        : /home/badri/DNCON2/scripts/cnn-predict-and-append-to-X.py
+dir_config    : /home/badri/DNCON2/scripts/../model-config-n-weights
+file_weights  : /home/badri/DNCON2/scripts/../model-config-n-weights/stage1-80A.hdf5
+string_header : 80A
+fileX         : feat-3e7u.txt
+fileX_stage2  : 3e7u.feat.stage2.txt
+
+
+Running prediction using coevo-85A .. 
+Using TensorFlow backend.
+/home/badri/DNCON2/scripts/libcnnpredict.py:116: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same", input_shape=(50, 50, 5...)`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same', input_shape=X[0, :, :, :].shape))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(1, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+2017-09-22 21:44:09.629942: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:09.630078: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:09.630129: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+SCRIPT        : /home/badri/DNCON2/scripts/cnn-predict-and-append-to-X.py
+dir_config    : /home/badri/DNCON2/scripts/../model-config-n-weights
+file_weights  : /home/badri/DNCON2/scripts/../model-config-n-weights/stage1-85A.hdf5
+string_header : 85A
+fileX         : feat-3e7u.txt
+fileX_stage2  : 3e7u.feat.stage2.txt
+
+
+Running prediction using coevo-10A .. 
+Using TensorFlow backend.
+/home/badri/DNCON2/scripts/libcnnpredict.py:116: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same", input_shape=(50, 50, 5...)`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same', input_shape=X[0, :, :, :].shape))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(1, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+2017-09-22 21:44:11.578375: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:11.578561: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:11.578616: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+SCRIPT        : /home/badri/DNCON2/scripts/cnn-predict-and-append-to-X.py
+dir_config    : /home/badri/DNCON2/scripts/../model-config-n-weights
+file_weights  : /home/badri/DNCON2/scripts/../model-config-n-weights/stage1-10A.hdf5
+string_header : 10A
+fileX         : feat-3e7u.txt
+fileX_stage2  : 3e7u.feat.stage2.txt
+
+
+All features in final X:
+# Sequence Length (log)
+# alignment-count (log)
+# effective-alignment-count (log)
+# Relative 'b' count
+# Relative 'H' count
+# Relative 'E' count
+# AA composition
+# Atchley factors
+# Secondary Structure
+# Solvent accessibility
+# PSSM inf feature
+# PSSM
+# PSSM Sums (divided by 100)
+# PSSM sum cosines
+# Relative sequence separation
+# Sequence separation between 23 and 28
+# Sequence separation between 28 and 38
+# Sequence separation between 38 and 48
+# Sequence separation 48+
+# Psipred
+# Psisolv
+# pref score
+# scld lu con pot
+# levitt con pot
+# braun con pot
+# joint entro
+# pearson r
+# Shannon entropy sum
+# ccmpred
+# freecontact
+# psicov
+# pstat_pots
+# pstat_mimt
+# pstat_mip
+# Prediction at 60A
+# Prediction at 75A
+# Prediction at 80A
+# Prediction at 85A
+# Prediction at 10A
+
+Predict stage2..
+Using TensorFlow backend.
+
+SCRIPT     : /home/badri/DNCON2/scripts/cnn-predict-stage2.py
+dir_config : /home/badri/DNCON2/scripts/../model-config-n-weights
+fileX      : 3e7u.feat.stage2.txt
+fileRR     : 3e7u.rr.raw.tmp
+
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-1.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-2.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-3.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-4.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-5.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-6.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-7.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-8.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-9.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-10.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-11.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-12.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-13.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-14.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-15.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-16.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-17.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-18.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-19.hdf5 ..
+Reading weight file /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-20.hdf5 ..
+
+FeatID         Avg        Med        Max        Sum        Avg[30]    Med[30]    Max[30]    Sum[30]
+ Feat 0     2.3609     3.6889     3.6889     5902.2         2.9511     3.6889     3.6889   147.5560
+ Feat 1     3.4548     5.3982     5.3982     8637.1         4.3185     5.3982     5.3982   215.9265
+ Feat 2     2.2380     3.4968     3.4968     5594.9         2.7975     3.4968     3.4968   139.8729
+ Feat 3     0.1792     0.2800     0.2800      448.0         0.2240     0.2800     0.2800    11.2000
+ Feat 4     0.1600     0.2500     0.2500      400.0         0.2000     0.2500     0.2500    10.0000
+ Feat 5     0.1600     0.2500     0.2500      400.0         0.2000     0.2500     0.2500    10.0000
+ Feat 6     0.2723     0.1100     1.0000      680.8         0.1920     0.2400     0.2400     9.6000
+ Feat 7     0.2723     0.1100     1.0000      680.8         0.3404     0.3000     1.0000    17.0200
+ Feat 8     0.3347     0.2700     1.0000      836.8         0.0480     0.0600     0.0600     2.4000
+ Feat 9     0.3347     0.2700     1.0000      836.8         0.4184     0.4000     1.0000    20.9200
+ Feat10     0.3992     0.5000     1.0000      998.0         0.4080     0.5100     0.5100    20.4000
+ Feat11     0.3992     0.5000     1.0000      998.0         0.4990     0.5250     1.0000    24.9500
+ Feat12     0.3442     0.3000     1.0000      860.4         0.8000     1.0000     1.0000    40.0000
+ Feat13     0.3442     0.3000     1.0000      860.4         0.4302     0.4700     1.0000    21.5100
+ Feat14     0.3754     0.4900     0.8600      938.4         0.4000     0.5000     0.5000    20.0000
+ Feat15     0.3754     0.4900     0.8600      938.4         0.4692     0.5000     0.8600    23.4600
+ Feat16     0.1600     0.0000     1.0000      400.0         0.0000     0.0000     0.0000     0.0000
+ Feat17     0.1600     0.0000     1.0000      400.0         0.2000     0.0000     1.0000    10.0000
+ Feat18     0.1600     0.0000     1.0000      400.0         0.8000     1.0000     1.0000    40.0000
+ Feat19     0.1600     0.0000     1.0000      400.0         0.2000     0.0000     1.0000    10.0000
+ Feat20     0.3200     0.0000     1.0000      800.0         0.0000     0.0000     0.0000     0.0000
+ Feat21     0.3200     0.0000     1.0000      800.0         0.4000     0.0000     1.0000    20.0000
+ Feat22     0.4640     0.0000     1.0000     1160.0         0.0000     0.0000     0.0000     0.0000
+ Feat23     0.4640     0.0000     1.0000     1160.0         0.5800     1.0000     1.0000    29.0000
+ Feat24     0.0000     0.0000     0.0000        0.0         0.0000     0.0000     0.0000     0.0000
+ Feat25     0.0000     0.0000     0.0000        0.0         0.0000     0.0000     0.0000     0.0000
+ Feat26     0.0000     0.0000     0.0000        0.0         0.0000     0.0000     0.0000     0.0000
+ Feat27     0.0000     0.0000     0.0000        0.0         0.0000     0.0000     0.0000     0.0000
+ Feat28     0.0000     0.0000     0.0000        0.0         0.0000     0.0000     0.0000     0.0000
+ Feat29     0.2132     0.1200     0.9700      533.0         0.2548     0.1850     0.7500    12.7400
+ Feat30     0.0600     0.0000     1.0000      150.0         0.1000     0.0000     1.0000     5.0000
+ Feat31     0.0600     0.0000     1.0000      150.0         0.0600     0.0000     1.0000     3.0000
+ Feat32     0.0024     0.0000     1.0000        6.0         0.0000     0.0000     0.0000     0.0000
+ Feat33     0.0000     0.0000     0.0000        0.0         0.0000     0.0000     0.0000     0.0000
+ Feat34     0.3500     0.2560     0.9970      875.1         0.3448     0.4310     0.4310    17.2400
+ Feat35     0.3500     0.2560     0.9970      875.1         0.4375     0.4230     0.9970    21.8770
+ Feat36     0.1142     0.0050     0.6870      285.6         0.0208     0.0260     0.0260     1.0400
+ Feat37     0.1142     0.0050     0.6870      285.6         0.1428     0.0085     0.6870     7.1390
+ Feat38     0.1469     0.0160     0.8660      367.2         0.3816     0.4770     0.4770    19.0800
+ Feat39     0.1469     0.0160     0.8660      367.2         0.1836     0.0425     0.8660     9.1790
+ Feat40     0.1917     0.1400     0.9460      479.2         0.1120     0.1400     0.1400     5.6000
+ Feat41     0.1917     0.1400     0.9460      479.2         0.2396     0.2040     0.9460    11.9810
+ Feat42     0.1869     0.0880     0.9840      467.2         0.4478     0.4080     0.9840    22.3880
+ Feat43     0.4130     0.5400     1.0000     1032.4         0.5595     0.6110     0.9050    27.9750
+ Feat44     0.4008     0.5000     1.0000     1001.9         0.6231     0.7890     0.9740    31.1560
+ Feat45     0.3594     0.4600     1.0000      898.6         0.4544     0.5060     0.7140    22.7190
+ Feat46     0.0000     0.0000     0.0000        0.0         0.0000     0.0000     0.0000     0.0000
+ Feat47     0.3200     0.5000     0.5000      800.0         0.4000     0.5000     0.5000    20.0000
+ Feat48     0.5143     0.7160     0.9490     1285.8         0.7408     0.9260     0.9260    37.0400
+ Feat49     0.5143     0.7160     0.9490     1285.8         0.6429     0.7645     0.9490    32.1440
+ Feat50     0.1682     0.1970     1.0000      420.5         0.2170     0.2110     1.0000    10.8488
+ Feat51     0.2812     0.0000     8.1615      703.1         0.2985     0.0000     2.9122    14.9262
+ Feat52     0.2676     0.0000     7.5221      669.1         0.5417     0.0000     7.5221    27.0857
+ Feat53     0.3157     0.4834     0.5417      789.2         0.4064     0.5062     0.5329    20.3223
+ Feat54     0.3178     0.4910     0.5724      794.5         0.3966     0.4915     0.5276    19.8292
+ Feat55     0.3200     0.4931     0.5734      799.9         0.4000     0.4971     0.5331    19.9990
+ Feat56     0.0852     0.0028     1.0000      212.9         0.1364     0.0306     0.9999     6.8206
+ Feat57     0.1164     0.0077     0.9999      290.9         0.1706     0.0180     0.9999     8.5297
+ Feat58     0.1217     0.0130     0.9998      304.3         0.2111     0.0498     0.9998    10.5552
+ Feat59     0.1252     0.0088     1.0000      313.1         0.2249     0.0514     1.0000    11.2465
+ Feat60     0.2344     0.0955     0.9996      585.9         0.3983     0.3591     0.999/home/badri/DNCON2/scripts/libcnnpredict.py:116: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same", input_shape=(50, 50, 6...)`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same', input_shape=X[0, :, :, :].shape))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+/home/badri/DNCON2/scripts/libcnnpredict.py:118: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(1, (5, 5), padding="same")`
+  model.add(Convolution2D(num_kernels, filter_size, filter_size, border_mode='same'))
+2017-09-22 21:44:13.568294: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:13.568431: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-22 21:44:13.568483: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+5    19.9174
+
+Starting ensemble prediction.. 
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-12.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-4.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-6.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-7.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-9.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-2.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-10.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-19.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-16.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-1.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-17.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-18.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-15.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-13.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-14.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-11.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-20.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-3.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-5.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+
+Running prediction using /home/badri/DNCON2/scripts/../model-config-n-weights/stage2-8.hdf5 and /home/badri/DNCON2/scripts/../model-config-n-weights/model-arch.config
+
+Read model architecture:
+layer0 : 16 5 1 relu
+layer1 : 16 5 1 relu
+layer2 : 16 5 1 relu
+layer3 : 16 5 1 relu
+layer4 : 16 5 1 relu
+layer5 : 16 5 1 relu
+layer6 : 1 5 0 sigmoid
+
+Writing RR file 3e7u.rr.raw.tmp
+
+
+Preparing predictions..
+[[Executing: mkdir -p predictions]]
+[[Executing: rm -f predictions/*]]
+[[Executing: echo "GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY" > ./predictions/3e7u.psicov.rr]]
+[[Executing: cat ./psicov/3e7u.psicov.rr >> ./predictions/3e7u.psicov.rr]]
+[[Executing: echo "GFGCNGPWDEDDMQCHNHCKSIKGYKGGYCAKGGFVCKCY" > ./predictions/dncon2.rr]]
+[[Executing: cat ./3e7u.rr.raw >> ./predictions/dncon2.rr]]
+Add some details to the prediction and prepared CASP RR format..
+
+Finished [../scripts/dncon2-main.pl]: Fri Sep 22 21:44:26 2017

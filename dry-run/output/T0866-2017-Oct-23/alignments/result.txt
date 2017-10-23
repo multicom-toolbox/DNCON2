@@ -1,0 +1,1 @@
+cp hhb-cov60.aln T0866.aln

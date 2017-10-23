@@ -1,0 +1,162 @@
+Search results will be written to T0866.hhr
+Reading in 8290068 column state sequences with a total of 1874100330 residues
+
+Iteration 1
+Prefiltering database
+...................................................................................
+HMMs passed 1st prefilter (gapless profile-profile alignment)  : 203266
+HMMs passed 2nd prefilter (gapped profile-profile alignment)   :    409
+HMMs passed 2nd prefilter and not found in previous iterations :    409
+Scoring 409 HMMs using HMM-HMM Viterbi alignment
+....................
+Realigning 359 HMMs using HMM-HMM Maximum Accuracy algorithm
+....................................
+Merging hits to query profile
+89 sequences belonging to 89 database HMMs found with an E-value < 0.001       
+Number of effective sequences of resulting query HMM: Neff = 6.96
+
+Iteration 2
+Prefiltering database
+...................................................................................
+HMMs passed 1st prefilter (gapless profile-profile alignment)  : 439872
+HMMs passed 2nd prefilter (gapped profile-profile alignment)   :   1281
+HMMs passed 2nd prefilter and not found in previous iterations :   1281
+Scoring 1281 HMMs using HMM-HMM Viterbi alignment
+...................................
+
+Realigning 461 HMMs using HMM-HMM Maximum Accuracy algorithm
+..............................................
+Merging hits to query profile
+356 sequences belonging to 356 database HMMs found with an E-value < 0.001       
+Number of effective sequences of resulting query HMM: Neff = 7.06
+
+Iteration 3
+Prefiltering database
+...................................................................................
+HMMs passed 1st prefilter (gapless profile-profile alignment)  : 428898
+HMMs passed 2nd prefilter (gapped profile-profile alignment)   :   1259
+HMMs passed 2nd prefilter and not found in previous iterations :   1259
+Scoring 1259 HMMs using HMM-HMM Viterbi alignment
+......................................
+
+Rescoring previously found HMMs with Viterbi algorithm
+................
+Realigning 338 HMMs using HMM-HMM Maximum Accuracy algorithm
+.................................................. 500  HMMs aligned
+................
+Merging hits to query profile
+365 sequences belonging to 365 database HMMs found with an E-value < 0.001       
+Number of effective sequences of resulting query HMM: Neff = 7.06
+
+Query         T0866
+Match_columns 183
+No_of_seqs    4015 out of 5526
+Neff          7.1 
+Searched_HMMs 1615
+Date          Fri Sep 22 23:08:12 2017
+Command       /usr/bin/hhblits -i T0866.fasta -d /home/badri/databases/uniprot20_2016_02/uniprot20_2016_02 -oa3m hhb-cov60.a3m -cpu 2 -n 3 -maxfilt 500000 -diff inf -e 0.001 -id 99 -cov 60 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 tr|A0A093RK62|A0A093RK62_9ENTR 100.0 4.7E-39 2.5E-44  256.0   0.0  161    1-161     1-161 (191)
+  2 tr|A0A093RK62|A0A093RK62_9ENTR 100.0 4.7E-39 2.5E-44  256.0   0.0  161    1-161     1-161 (191)
+  3 tr|A0A061QFC6|A0A061QFC6_9PROT 100.0 7.3E-37 4.2E-42  238.8   0.0  150    1-159     1-150 (153)
+  4 tr|A0A061QFC6|A0A061QFC6_9PROT 100.0 7.3E-37 4.2E-42  238.8   0.0  150    1-159     1-150 (153)
+  5 tr|K1U4S4|K1U4S4_9ZZZZ Secrete 100.0 1.4E-36 7.8E-42  234.4   0.0  146    4-157     1-147 (149)
+  6 tr|K1U4S4|K1U4S4_9ZZZZ Secrete 100.0 1.4E-36 7.8E-42  234.4   0.0  146    4-157     1-147 (149)
+  7 tr|A0A0F3NA72|A0A0F3NA72_ANAPH 100.0 4.9E-34 2.8E-39  222.7   0.0  147    1-154     2-148 (150)
+  8 tr|A0A0F3NA72|A0A0F3NA72_ANAPH 100.0 4.9E-34 2.8E-39  222.7   0.0  147    1-154     2-148 (150)
+  9 tr|F3SA24|F3SA24_9PROT Putativ  99.9 1.3E-32 6.4E-38  218.1   0.0  161    1-170    21-181 (190)
+ 10 tr|F3SA24|F3SA24_9PROT Putativ  99.9 1.3E-32 6.4E-38  218.1   0.0  161    1-170    21-181 (190)
+ 11 tr|A0A086YDD8|A0A086YDD8_9RHOB  99.9 9.3E-32 4.8E-37  212.7   0.0  167    1-175     2-172 (181)
+ 12 tr|A0A086YDD8|A0A086YDD8_9RHOB  99.9 9.3E-32 4.8E-37  212.7   0.0  167    1-175     2-172 (181)
+ 13 tr|Q2LS06|Q2LS06_SYNAS ABC-typ  99.9 9.2E-29 5.8E-34  226.1   0.0  150    1-158     1-150 (493)
+ 14 tr|Q2LS06|Q2LS06_SYNAS ABC-typ  99.9 9.2E-29 5.8E-34  226.1   0.0  150    1-158     1-150 (493)
+ 15 tr|A0A0N0MZR8|A0A0N0MZR8_9ACTN  99.9 3.7E-28 2.2E-33  217.8   0.0  156    1-162     1-159 (429)
+ 16 tr|A0A0N0MZR8|A0A0N0MZR8_9ACTN  99.9 3.7E-28 2.2E-33  217.8   0.0  156    1-162     1-159 (429)
+ 17 tr|U6ZM34|U6ZM34_9ENTR Unchara  99.9   8E-28 3.6E-33  187.9   0.0  162    1-162     1-162 (214)
+ 18 tr|U6ZM34|U6ZM34_9ENTR Unchara  99.9 9.4E-28 4.3E-33  187.9   0.0  162    1-162     1-162 (214)
+ 19 tr|F8JUH0|F8JUH0_STREN Putativ  99.9 8.2E-28 5.4E-33  211.7   0.0  152    8-168    11-165 (343)
+ 20 tr|F8JUH0|F8JUH0_STREN Putativ  99.9 8.2E-28 5.4E-33  211.7   0.0  152    8-168    11-165 (343)
+ 21 tr|W1W608|W1W608_9FIRM Mammali  99.9 1.4E-27 7.7E-33  197.3   0.0  143    4-156     3-145 (229)
+ 22 tr|A0A0N9YIU0|A0A0N9YIU0_MYCFO  99.9 1.7E-27   1E-32  210.0   0.0  152    5-167    12-165 (365)
+ 23 tr|A0A0N9YIU0|A0A0N9YIU0_MYCFO  99.9 1.7E-27   1E-32  210.0   0.0  152    5-167    12-165 (365)
+ 24 tr|W1W608|W1W608_9FIRM Mammali  99.9 2.3E-27 1.4E-32  197.3   0.0  143    4-156     3-145 (229)
+ 25 tr|E5APT9|E5APT9_BURRH Toluene  99.9 9.6E-27 4.3E-32  182.2   0.0  151    1-157    33-183 (225)
+ 26 tr|E5APT9|E5APT9_BURRH Toluene  99.9 9.6E-27 4.3E-32  182.2   0.0  151    1-157    33-183 (225)
+ 27 tr|A0A0I9XIL3|A0A0I9XIL3_9MYCO  99.9 8.1E-27 4.8E-32  205.8   0.0  118   37-161    31-150 (368)
+ 28 tr|A0A0I9XIL3|A0A0I9XIL3_9MYCO  99.9 8.1E-27 4.8E-32  205.8   0.0  118   37-161    31-150 (368)
+ 29 tr|G8RW32|G8RW32_MYCRN Virulen  99.9   1E-26 5.6E-32  210.1   0.0  155    1-162     1-157 (507)
+ 30 tr|G8RW32|G8RW32_MYCRN Virulen  99.9   1E-26 5.6E-32  210.1   0.0  155    1-162     1-157 (507)
+ 31 tr|A0A0F3IDU0|A0A0F3IDU0_9NOCA  99.9 1.5E-26 8.6E-32  206.1   0.0  118   38-162    39-158 (427)
+ 32 tr|A0A0F3IDU0|A0A0F3IDU0_9NOCA  99.9 1.5E-26 8.6E-32  206.1   0.0  118   38-162    39-158 (427)
+ 33 tr|A0A0H0T959|A0A0H0T959_9MYCO  99.9 3.1E-26 1.7E-31  206.6   0.0  120   37-162    31-152 (491)
+ 34 tr|A0A0H0T959|A0A0H0T959_9MYCO  99.9 3.1E-26 1.7E-31  206.6   0.0  120   37-162    31-152 (491)
+ 35 tr|D9XJW9|D9XJW9_9ACTN Virulen  99.9 4.2E-26   2E-31  177.8   0.0  155    1-162     1-159 (178)
+ 36 tr|A0A077ZFB4|A0A077ZFB4_TRITR  99.9 4.8E-26 2.1E-31  199.9   0.0  174    1-174   222-395 (709)
+ 37 tr|A0A077ZFB4|A0A077ZFB4_TRITR  99.9 4.8E-26 2.1E-31  199.9   0.0  174    1-174   222-395 (709)
+ 38 tr|D9XJW9|D9XJW9_9ACTN Virulen  99.9 5.8E-26 2.9E-31  177.8   0.0  155    1-162     1-159 (178)
+ 39 tr|B5YIL8|B5YIL8_THEYD Mce-rel  99.9 4.4E-26 2.9E-31  198.9   0.0  137    3-149     8-147 (316)
+ 40 tr|B5YIL8|B5YIL8_THEYD Mce-rel  99.9 4.4E-26 2.9E-31  198.9   0.0  137    3-149     8-147 (316)
+ 41 tr|A0A024JYA8|A0A024JYA8_9MYCO  99.9 6.3E-26 3.2E-31  200.6   0.0  119   37-162    54-174 (476)
+ 42 tr|A0A024JYA8|A0A024JYA8_9MYCO  99.9 6.3E-26 3.2E-31  200.6   0.0  119   37-162    54-174 (476)
+ 43 tr|G2PRP0|G2PRP0_MURRD Mammali  99.9 5.9E-26 3.4E-31  197.3   0.0  145    3-154     5-150 (327)
+ 44 tr|G2PRP0|G2PRP0_MURRD Mammali  99.9 5.9E-26 3.4E-31  197.3   0.0  145    3-154     5-150 (327)
+ 45 tr|H0Q5I9|H0Q5I9_9RHOO Unchara  99.9   6E-26   4E-31  198.4   0.0  118    1-121     1-121 (320)
+ 46 tr|H0Q5I9|H0Q5I9_9RHOO Unchara  99.9   6E-26   4E-31  198.4   0.0  118    1-121     1-121 (320)
+ 47 tr|I4VRK2|I4VRK2_9GAMM Organic  99.9   1E-25   5E-31  185.2   0.0  144    7-155     9-152 (280)
+ 48 tr|D3L2J2|D3L2J2_9BACT Putativ  99.9 1.3E-25 7.3E-31  201.0   0.0  143    5-158     2-144 (453)
+ 49 tr|D3L2J2|D3L2J2_9BACT Putativ  99.9 1.3E-25 7.3E-31  201.0   0.0  143    5-158     2-144 (453)
+ 50 tr|I4VRK2|I4VRK2_9GAMM Organic  99.9 1.6E-25 7.8E-31  185.2   0.0  144    7-155     9-152 (280)
+ 51 tr|K9SAM0|K9SAM0_9CYAN Mammali  99.9 1.4E-25 7.8E-31  201.1   0.0  153    1-159     1-167 (454)
+ 52 tr|K9SAM0|K9SAM0_9CYAN Mammali  99.9 1.4E-25 7.8E-31  201.1   0.0  153    1-159     1-167 (454)
+ 53 tr|A0A0H5J854|A0A0H5J854_YEREN  99.9 2.1E-25 9.2E-31  174.7   0.0  161    1-161     1-161 (223)
+ 54 tr|A0A0H5J854|A0A0H5J854_YEREN  99.9 2.1E-25 9.2E-31  174.7   0.0  161    1-161     1-161 (223)
+ 55 tr|U5EGV5|U5EGV5_NOCAS Mce fam  99.8 2.7E-25 1.5E-30  197.8   0.0  147    7-162    46-196 (424)
+ 56 tr|U5EGV5|U5EGV5_NOCAS Mce fam  99.8 2.7E-25 1.5E-30  197.8   0.0  147    7-162    46-196 (424)
+ 57 tr|H1XWC3|H1XWC3_9BACT Mammali  99.8 3.2E-25 1.8E-30  192.5   0.0  142    1-150     1-144 (327)
+ 58 tr|A0A0B8NB36|A0A0B8NB36_9NOCA  99.8 3.9E-25 2.4E-30  193.0   0.0  153    1-163     1-155 (318)
+ 59 tr|A0A0B8NB36|A0A0B8NB36_9NOCA  99.8 3.9E-25 2.4E-30  193.0   0.0  153    1-163     1-155 (318)
+ 60 tr|H1XWC3|H1XWC3_9BACT Mammali  99.8   5E-25   3E-30  192.5   0.0  143    1-151     1-145 (327)
+ 61 tr|K6W7Z9|K6W7Z9_9ACTN Mce fam  99.8   9E-25 4.5E-30  179.3   0.0  151    4-162     6-159 (250)
+ 62 tr|K2EH04|K2EH04_9BACT Acetyl-  99.8   1E-24 5.3E-30  159.0   0.0  102   54-161     2-103 (105)
+ 63 tr|K6W7Z9|K6W7Z9_9ACTN Mce fam  99.8 1.4E-24 6.9E-30  179.3   0.0  151    4-162     6-159 (250)
+ 64 tr|K2EH04|K2EH04_9BACT Acetyl-  99.8 1.6E-24 8.7E-30  159.0   0.0  102   54-161     2-103 (105)
+ 65 tr|D9PKF2|D9PKF2_9ZZZZ Mammali  99.8 1.5E-24 9.3E-30  187.0   0.0  130    7-147     4-133 (287)
+ 66 tr|D9PKF2|D9PKF2_9ZZZZ Mammali  99.8 1.5E-24 9.3E-30  187.0   0.0  130    7-147     4-133 (287)
+ 67 tr|A0A0F7N691|A0A0F7N691_9ACTN  99.8 2.9E-24 1.6E-29  191.8   0.0  130   37-167    51-199 (464)
+ 68 tr|A0A0F7N691|A0A0F7N691_9ACTN  99.8 2.9E-24 1.6E-29  191.8   0.0  130   37-167    51-199 (464)
+ 69 tr|W7J3G4|W7J3G4_9PSEU MCE-fam  99.8 4.4E-24 2.5E-29  192.7   0.0  159    2-168    12-174 (455)
+ 70 tr|W7J3G4|W7J3G4_9PSEU MCE-fam  99.8 4.4E-24 2.5E-29  192.7   0.0  159    2-168    12-174 (455)
+ 71 tr|X5LAM1|X5LAM1_9MYCO Mce-fam  99.8 5.4E-24 2.6E-29  181.4   0.0  155    1-162     2-156 (363)
+ 72 tr|B0VHY9|B0VHY9_CLOAI Unchara  99.8 5.3E-24 2.8E-29  187.8   0.0  141    1-150     1-144 (410)
+ 73 tr|B0VHY9|B0VHY9_CLOAI Unchara  99.8 5.3E-24 2.8E-29  187.8   0.0  141    1-150     1-144 (410)
+ 74 tr|X5LAM1|X5LAM1_9MYCO Mce-fam  99.8 7.4E-24 3.7E-29  181.4   0.0  155    1-162     2-156 (363)
+ 75 tr|X7ZX54|X7ZX54_MYCXE Mce rel  99.8 7.8E-24 3.7E-29  163.2   0.0  133   21-162     7-141 (168)
+ 76 tr|A0A0Q9AFP1|A0A0Q9AFP1_9MYCO  99.8 8.7E-24 4.2E-29  189.0   0.0  162    1-165     1-165 (593)
+ 77 tr|A0A0Q9AFP1|A0A0Q9AFP1_9MYCO  99.8 8.7E-24 4.2E-29  189.0   0.0  162    1-165     1-165 (593)
+ 78 tr|X8CLF3|X8CLF3_MYCIT Unchara  99.8 9.4E-24 4.6E-29  194.9   0.0  127   29-164   478-606 (897)
+ 79 tr|X7ZX54|X7ZX54_MYCXE Mce rel  99.8 1.1E-23 5.1E-29  163.2   0.0  133   21-162     7-141 (168)
+ 80 tr|A0A077DC69|A0A077DC69_9BURK  99.8   1E-23 6.4E-29  184.0   0.0  117    1-120     1-119 (313)
+ 81 tr|A0A077DC69|A0A077DC69_9BURK  99.8   1E-23 6.4E-29  184.0   0.0  117    1-120     1-119 (313)
+ 82 tr|X8CLF3|X8CLF3_MYCIT Unchara  99.8 1.6E-23   8E-29  194.9   0.0  127   29-164   478-606 (897)
+ 83 tr|W5WJM9|W5WJM9_9PSEU Unchara  99.8 1.5E-23 8.5E-29  184.6   0.0  153    7-167     3-157 (366)
+ 84 tr|W5WJM9|W5WJM9_9PSEU Unchara  99.8 1.5E-23 8.5E-29  184.6   0.0  153    7-167     3-157 (366)
+ 85 tr|H0E7N4|H0E7N4_9ACTN Long-ch  99.8 1.7E-23   1E-28  189.2   0.0  157    3-168     6-166 (450)
+ 86 tr|H0E7N4|H0E7N4_9ACTN Long-ch  99.8 1.7E-23   1E-28  189.2   0.0  157    3-168     6-166 (450)
+ 87 tr|A0A0Q4YCF0|A0A0Q4YCF0_9ACTN  99.8 1.7E-23   1E-28  187.5   0.0  159    3-168    12-180 (409)
+ 88 tr|A0A0Q4YCF0|A0A0Q4YCF0_9ACTN  99.8 1.7E-23   1E-28  187.5   0.0  159    3-168    12-180 (409)
+ 89 tr|X8CQ24|X8CQ24_MYCIT Mce rel  99.8 2.2E-23 1.1E-28  166.4   0.0  121   37-164    23-145 (219)
+ 90 tr|A0A0F9UWH7|A0A0F9UWH7_9ZZZZ  99.8 2.4E-23 1.3E-28  193.9   0.0  118    1-121     1-120 (745)
+ 91 tr|X8CQ24|X8CQ24_MYCIT Mce rel  99.8 2.8E-23 1.3E-28  166.4   0.0  121   37-164    23-145 (219)
+ 92 tr|X8DHM2|X8DHM2_9MYCO Unchara  99.8 4.4E-23   2E-28  171.4   0.0  150    1-162     1-152 (308)
+ 93 tr|X8DHM2|X8DHM2_9MYCO Unchara  99.8 5.7E-23 2.7E-28  171.4   0.0  150    1-162     1-152 (308)
+ 94 tr|A0A0F9UWH7|A0A0F9UWH7_9ZZZZ  99.8 5.8E-23 3.3E-28  193.9   0.0  118    1-121     1-120 (745)
+ 95 tr|A0A0Q8I6X1|A0A0Q8I6X1_9ACTN  99.8 5.5E-23 3.6E-28  181.9   0.0  118   37-162    33-152 (348)
+ 96 tr|A0A0Q8I6X1|A0A0Q8I6X1_9ACTN  99.8 5.5E-23 3.6E-28  181.9   0.0  118   37-162    33-152 (348)
+ 97 tr|A0A0G1VRK6|A0A0G1VRK6_9BACT  99.8 8.8E-23 4.6E-28  168.5   0.0  148    1-157     1-150 (240)
+ 98 tr|I4VRK2|I4VRK2_9GAMM Organic  99.8   1E-22 4.9E-28  167.9   0.0  119   37-160   158-276 (280)
+ 99 tr|A0A0G1VRK6|A0A0G1VRK6_9BACT  99.8 1.2E-22 6.4E-28  168.5   0.0  148    1-157     1-150 (240)
+100 tr|I4VRK2|I4VRK2_9GAMM Organic  99.8 1.5E-22 7.3E-28  167.9   0.0  119   37-160   158-276 (280)
+
+Writing A3M alignment to hhb-cov60.a3m
+Done
