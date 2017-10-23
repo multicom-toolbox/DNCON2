@@ -205,24 +205,24 @@ csh
 exit
 ```
 
-**(H) Configure DNCON2 scripts**  
+**(H) Configure DNCON2 scripts (in '~/DNCON2/DNCON2/scripts/' directory)**  
 
 (a) Update the following variables in the script 'run-ccmpred-freecontact-psicov.pl'
 ```
 FREECONTACT=> '/usr/bin/freecontact',
-PSICOV    => '/home/badri/psicov/psicov',
-CCMPRED   => '/home/badri/CCMpred/bin/ccmpred',
+PSICOV    => '/home/badri/DNCON2/psicov/psicov',
+CCMPRED   => '/home/badri/DNCON2/CCMpred/bin/ccmpred',
 HOURLIMIT => 24,
 NPROC     => 8
 ```
 
 (b) Update the following variables in the script 'generate-alignments.pl' 
 ```
-JACKHMMER   => '/home/badri/hmmer-3.1b2-linux-intel-x86_64/binaries/jackhmmer',
+JACKHMMER   => '/home/badri/DNCON2/hmmer-3.1b2-linux-intel-x86_64/binaries/jackhmmer',
 REFORMAT    => abs_path(dirname($0)).'/reformat.pl',
-JACKHMMERDB => '/home/badri/databases/uniref/uniref90pfilt',
+JACKHMMERDB => '/home/badri/DNCON2/databases/uniref/uniref90pfilt',
 HHBLITS     => '/usr/bin/hhblits',
-HHBLITSDB   => '/home/badri/databases/uniprot20_2016_02/uniprot20_2016_02',
+HHBLITSDB   => '/home/badri/DNCON2/databases/uniprot20_2016_02/uniprot20_2016_02',
 CPU         => 2
 ```
 
