@@ -264,6 +264,9 @@ cd ~/DNCON2/DNCON2/dry-run/
 ./run-3e7u.sh
 ./run-T0866.sh
 ./run-T0900.sh
+```
+Update the output paths in the script 'evaluate-runs.sh' execute it to evaluate precision of predicted contacts
+```
 ./evaluate-runs.sh
 ```
 Compare the evaluations with the outputs and logs at './DNCON2/dry-run/output' and './DNCON2/dry-run/results.txt'.
