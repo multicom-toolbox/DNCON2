@@ -160,6 +160,7 @@ cp ./metapsicov/examples/5ptpA.fasta ~/DNCON2/
 ./metapsicov/runpsipredandsolv 5ptpA.fasta
 ```
 Check the expected output files '5ptpA.ss2', '5ptpA.horiz', and '5ptpA.solv'.
+
 **(F) Install SCRATCH Suite** 
 ```
 cd ~/DNCON2/
