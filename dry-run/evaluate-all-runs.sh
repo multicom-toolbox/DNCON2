@@ -4,7 +4,7 @@ echo "==========================================================================
 echo "Evaluation of 3e7u prediction"
 echo "===================================================================================================="
 
-../scripts/coneva-lite.pl -pdb ./native/3E7U.pdb -rr ./output/3e7u/3e7u.dncon2.rr
+../scripts/coneva-lite.pl -pdb ./native/3E7U.pdb -rr ./output/3e7u-????/3e7u.dncon2.rr
 
 echo ""
 echo ""
@@ -12,7 +12,7 @@ echo "==========================================================================
 echo "Evaluation of T0866 prediction"
 echo "===================================================================================================="
 
-../scripts/coneva-lite.pl -pdb ./native/T0866-D1.pdb -rr ./output/T0866/T0866.dncon2.rr
+../scripts/coneva-lite.pl -pdb ./native/T0866-D1.pdb -rr ./output/T0866-????/T0866.dncon2.rr
 
 echo ""
 echo ""
@@ -20,5 +20,5 @@ echo "==========================================================================
 echo "Evaluation of T0900 prediction"
 echo "===================================================================================================="
 
-../scripts/coneva-lite.pl -pdb ./native/T0900-D1.pdb -rr ./output/T0900/T0900.dncon2.rr
+../scripts/coneva-lite.pl -pdb ./native/T0900-D1.pdb -rr ./output/T0900-????/T0900.dncon2.rr
 
