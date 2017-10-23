@@ -74,9 +74,10 @@ make
 cd ~/DNCON2/
 mkdir test-dncon2
 ./CCMpred/bin/ccmpred ./CCMpred/example/1atzA.aln ~/DNCON2/test-dncon2/ccmpred.cmap
-freecontact < ./CCMpred/example/1atzA.aln > ~/DNCON2/test-dncon2/freecontact.rr
 ./psicov/psicov ./CCMpred/example/1atzA.aln > ~/DNCON2/test-dncon2/psicov.rr
+freecontact < ./CCMpred/example/1atzA.aln > ~/DNCON2/test-dncon2/freecontact.rr
 ```
+[above freecontact command may throw a 'Symbol .. has different size ..' warning!]
 
 **(D) Install Tensorflow, Keras, and h5py and Update keras.json**  
 
