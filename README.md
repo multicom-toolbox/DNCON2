@@ -96,7 +96,7 @@ sudo pip install keras
 sudo pip install python-h5py
 ```
 
-(d) Add the entry [“image_dim_ordering": "tf”,] to your keras..json file at ~/.keras/keras.json. After the update, your keras.json should look like the one below:  
+(d) Add the entry [“image_dim_ordering": "tf”,] to your keras..json file at ~/.keras/keras.json. Note that if you have not tried to run Keras before, you have have to execute the Tensorflow verification step once so that your keras.json file is created. After the update, your keras.json should look like the one below:  
 ```
 {
     "epsilon": 1e-07,
@@ -116,26 +116,7 @@ cd ~/DNCON2/
 ```
 Verify that the contents of your output file ‘3e7u.rr’ matches the contents of ‘~/DNCON2/dry-run/output/3e7u/3e7u.dncon2.rr’.
 
-**(E) Install SCRATCH Suite** 
-```
-cd ~/DNCON2/
-wget http://download.igb.uci.edu/SCRATCH-1D_1.1.tar.gz
-tar zxvf SCRATCH-1D_1.1.tar.gz
-cd SCRATCH-1D_1.1/
-perl install.pl
-// Replace the 32-bit blast with 64-bit version (if needed)
-mv ./pkg/blast-2.2.26 ./pkg/blast-2.2.26.original
-cp -r ~/blast-2.2.26 ./pkg/ (64-bit Legacy Blast is already installed)
-```
-
-**[OPTIONAL] Verify SCRATCH installation**  
-```
-cd ~/DNCON2/SCRATCH-1D_1.1/
-cd doc
-../bin/run_SCRATCH-1D_predictors.sh test.fasta test.out 4
-```
-
-**(F) Install Legacy Blast, PSIPRED, and runpsipredandsolv (MetaPSICOV)**  
+**(E) Install Legacy Blast, PSIPRED, and runpsipredandsolv (MetaPSICOV)**  
 
 (a) Install PSIPRED
 ```
@@ -177,6 +158,24 @@ cp ./metapsicov/examples/5ptpA.fasta ~/DNCON2/
 ./metapsicov/runpsipredandsolv 5ptpA.fasta
 ```
 Check the expected output files '5ptpA.ss2', '5ptpA.horiz', and '5ptpA.solv'.
+**(F) Install SCRATCH Suite** 
+```
+cd ~/DNCON2/
+wget http://download.igb.uci.edu/SCRATCH-1D_1.1.tar.gz
+tar zxvf SCRATCH-1D_1.1.tar.gz
+cd SCRATCH-1D_1.1/
+perl install.pl
+// Replace the 32-bit blast with 64-bit version (if needed)
+mv ./pkg/blast-2.2.26 ./pkg/blast-2.2.26.original
+cp -r ~/blast-2.2.26 ./pkg/ (64-bit Legacy Blast is already installed)
+```
+
+**[OPTIONAL] Verify SCRATCH installation**  
+```
+cd ~/DNCON2/SCRATCH-1D_1.1/
+cd doc
+../bin/run_SCRATCH-1D_predictors.sh test.fasta test.out 4
+```
 
 **(G) Install HHblits, JackHMMER, and test 'generate-alignments.pl'**  
 ```
