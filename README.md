@@ -1,6 +1,6 @@
 # DNCON2
-**Deep convolutional neural networks for protein contact map prediction**
-
+**Deep convolutional neural networks for protein contact map prediction**   
+**Web-server and datasets at http://sysbio.rnet.missouri.edu/dncon2/**    
 Test Environment
 --------------------------------------------------------------------------------------
 64-bit PC - Ubuntu 16.04 LTS
