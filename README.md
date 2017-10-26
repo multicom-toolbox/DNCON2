@@ -278,3 +278,7 @@ Update the output paths in the script 'evaluate-runs.sh' execute it to evaluate 
 ./evaluate-runs.sh
 ```
 Compare the evaluations with the outputs and logs at './DNCON2/dry-run/output' and './DNCON2/dry-run/results.txt'.
+
+-----------------------------------------------------------
+adhikarib@umsl.edu (developer)
+chengji@missouri.edu (PI)
