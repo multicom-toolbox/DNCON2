@@ -26,12 +26,18 @@ Steps for installing DNCON2
 --------------------------------------------------------------------------------------
 
 **(A) Download and Unzip DNCON2 package**
+Create a working directory called 'DNCON2' where all scripts, programs and databases will reside:
 ```
 cd ~
 mkdir DNCON2
-cd DNCON2/
+```
+Download the DNCON2 code:
+```
+cd ~/DNCON2/
 wget http://sysbio.rnet.missouri.edu/bdm_download/dncon2-tool/DNCON2.tar.gz
 tar zxvf DNCON2.tar.gz
+# Alternately
+git clone https://github.com/multicom-toolbox/DNCON2.git
 ```
 
 **(B) Download and Unzip all databases**  
@@ -51,6 +57,7 @@ tar zxvf uniprot20_2016_02.tar.gz
 ```
 sudo apt-get install freecontact
 ```
+Note: If you do not have root permissions, refer to the 'freecontact-install-non-root.txt' for instructions.
 ```
 cd ~/DNCON2/
 mkdir psicov
@@ -140,6 +147,7 @@ make
 make install
 ```
 (d) Install 'tcsh'
+If you do not have a copy of csh at '/usr/bin/csh' install 'tcsh':
 ```
 sudo apt-get install tcsh (below requires it)
 ```
