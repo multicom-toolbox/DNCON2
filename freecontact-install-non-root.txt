@@ -1,0 +1,28 @@
+$ cd /home/tools					  
+$ git clone https://github.com/xianyi/OpenBLAS.git
+$ make
+$ make PREFIX=/home/tools/OpenBLAS install
+
+$ export PATH=/home/tools/boost_1_55_0/include/:$PATH
+$ export LD_LIBRARY_PATH=/home/tools/boost_1_55_0/include/:$LD_LIBRARY_PATH
+
+$ export LD_LIBRARY_PATH=/home/tools/OpenBLAS:$LD_LIBRARY_PATH
+$ export PATH=/home/tools/OpenBLAS:$PATH
+
+$ wget http://old-releases.ubuntu.com/ubuntu/pool/universe/f/freecontact/freecontact_1.0.21.orig.tar.xz
+$ tar -xvf freecontact_1.0.21.orig.tar.xz 
+
+$ cd /home/tools/freecontact-1.0.21
+
+$ ./configure --prefix=/home/tools/freecontact-1.0.21   LDFLAGS="-L/home/tools/OpenBLAS/lib -L/home/tools/boost_1_38_0/lib" CFLAGS="-I/home/tools/OpenBLAS/include -I/home/tools/boost_1_38_0/include"  CPPFLAGS="-I/home/tools/OpenBLAS/include -I/home/tools/boost_1_38_0/include " --with-boost=/home/tools/boost_1_38_0/
+
+$ export PATH=/home/tools/boost_1_38_0/include/:$PATH
+$ export LD_LIBRARY_PATH=/home/tools/boost_1_38_0/include/:$LD_LIBRARY_PATH
+$ export LD_LIBRARY_PATH=/home/tools/boost_1_38_0/lib/:$LD_LIBRARY_PATH
+$ export BOOST_ROOT=/home/tools/boost_1_38_0
+$ export BOOST_INCLUDEDIR=/home/tools/boost_1_38_0/include
+
+$ export LD_LIBRARY_PATH=/home/tools/OpenBLAS:$LD_LIBRARY_PATH
+$ export PATH=/home/jh7x3/tools/OpenBLAS:$PATH
+
+$ ./bin/freecontact  < your-alignment.aln
