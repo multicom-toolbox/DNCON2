@@ -25,7 +25,7 @@ Data Flow in DNCON2
 Steps for installing DNCON2
 --------------------------------------------------------------------------------------
 
-**(A) Download and Unzip DNCON2 package**
+**(A) Download and Unzip DNCON2 package**  
 Create a working directory called 'DNCON2' where all scripts, programs and databases will reside:
 ```
 cd ~
