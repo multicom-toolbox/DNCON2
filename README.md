@@ -4,6 +4,9 @@
 
 Web-server and datasets at http://sysbio.rnet.missouri.edu/dncon2/  
 
+Citation:
+Badri Adhikari, Jie Hou, Jianlin Cheng. "DNCON2: Improved protein contact prediction using two-level deep convolutional neural networks". Bioinformatics, 2017.
+
 Test Environment
 --------------------------------------------------------------------------------------
 64-bit PC - Ubuntu 16.04 LTS
