@@ -12,9 +12,9 @@ Test Environment
 --------------------------------------------------------------------------------------
 64-bit PC - Ubuntu 16.04 LTS
 
-Programs, Scripts, and Databases dependency in DNCON2
+Programs, Scripts, and Databases dependencies
 --------------------------------------------------------------------------------------
-![Programs, Scripts, and Databases dependency in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dependency.PNG)
+![Programs, Scripts, and Databases dependencies](https://github.com/multicom-toolbox/DNCON2/blob/master/dependency.PNG)
 
 Installation Notes
 --------------------------------------------------------------------------------------
@@ -24,12 +24,12 @@ Installation Notes
 - For verifying your installation, use the results in the scripts and outputs in the dry-run directory. In the dry-run directory we provide input, output, and log files of DNCON2 execution for three sequences - 3e7u, T0866, and T0900.
 - It is possible that your installation results have slightly different confidence values. We noticed that the programs PSICOV, CCMpred, and FreeContact can produce slightly different results based on the machine architecture, availability/absence of GPU, etc.
 
-Data Flow in DNCON2
+Data Flow
 --------------------------------------------------------------------------------------
-![Data Flow in DNCON2](https://github.com/multicom-toolbox/DNCON2/blob/master/dataflow.PNG)
+![Data Flow](https://github.com/multicom-toolbox/DNCON2/blob/master/dataflow.PNG)
 
 
-Steps for installing DNCON2
+Installation Steps
 --------------------------------------------------------------------------------------
 
 **(A) Download and Unzip DNCON2 package**  
