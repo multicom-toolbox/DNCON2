@@ -55,14 +55,14 @@ use constant{
 	HOURLIMIT    => 1
 };
 
-# confess "Oops!! alignment-script not found at ".ALNSCRIPT   if not -f ALNSCRIPT;
-# confess "Oops!! rr-pred-script not found at ".RRPREDSCRIPT  if not -f RRPREDSCRIPT;
-# confess "Oops!! psipred program not found at ".PSIPRED      if not -f PSIPRED;
-# confess "Oops!! alnstat program not found at ".ALNSTAT      if not -f ALNSTAT;
-# confess "Oops!! scratch program not found at ".SCRATCH      if not -f SCRATCH;
-# confess "Oops!! GENFEAT program not found at ".GENFEAT      if not -f GENFEAT;
-# confess "Oops!! Blast Path not found at ".BLASTPATH         if not -d BLASTPATH;
-# confess "Oops!! BlastNRDB Path not found at ".BLASTNRDB     if not -d BLASTNRDB;
+confess "Oops!! alignment-script not found at ".ALNSCRIPT   if not -f ALNSCRIPT;
+confess "Oops!! rr-pred-script not found at ".RRPREDSCRIPT  if not -f RRPREDSCRIPT;
+confess "Oops!! psipred program not found at ".PSIPRED      if not -f PSIPRED;
+confess "Oops!! alnstat program not found at ".ALNSTAT      if not -f ALNSTAT;
+confess "Oops!! scratch program not found at ".SCRATCH      if not -f SCRATCH;
+confess "Oops!! GENFEAT program not found at ".GENFEAT      if not -f GENFEAT;
+confess "Oops!! Blast Path not found at ".BLASTPATH         if not -d BLASTPATH;
+confess "Oops!! BlastNRDB Path not found at ".BLASTNRDB     if not -d BLASTNRDB;
 
 ####################################################################################################
 print "Started [$0]: ".(localtime)."\n";
