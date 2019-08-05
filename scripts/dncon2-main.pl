@@ -81,62 +81,62 @@ $outdir = abs_path($outdir);
 chdir $outdir or confess $!;
 $fasta = basename($fasta);
 
-# ####################################################################################################
-# print "\n\n";
-# print "Generating PSSM..\n";
-# system_cmd("mkdir -p $outdir/pssm");
-# chdir $outdir."/pssm" or confess $!;
-# system_cmd("cp ../$fasta ./");
-# if ( -s "$id.pssm"){
-# 	print "Looks like .pssm file is already here.. skipping..\n";
-# }
-# else{
-# 	generate_pssm($fasta, "$id.pssm", "$id.psiblast.output");
-# 	if( ! -e "$id.pssm") {
-# 		print "Running less stringent version of PSSM generation..\n";
-# 		generate_pssm_less_stringent($fasta, "$id.pssm", "$id.psiblast.output");
-# 	}
-# }
-# chdir $outdir or confess $!;
+####################################################################################################
+print "\n\n";
+print "Generating PSSM..\n";
+system_cmd("mkdir -p $outdir/pssm");
+chdir $outdir."/pssm" or confess $!;
+system_cmd("cp ../$fasta ./");
+if ( -s "$id.pssm"){
+	print "Looks like .pssm file is already here.. skipping..\n";
+}
+else{
+	generate_pssm($fasta, "$id.pssm", "$id.psiblast.output");
+	if( ! -e "$id.pssm") {
+		print "Running less stringent version of PSSM generation..\n";
+		generate_pssm_less_stringent($fasta, "$id.pssm", "$id.psiblast.output");
+	}
+}
+chdir $outdir or confess $!;
 
-# ####################################################################################################
-# print "\n\n";
-# print "Predicting secondary structure and solvent accessibility using SCRATCH..\n";
-# system_cmd("mkdir -p $outdir/ss_sa");
-# chdir $outdir."/ss_sa" or confess $!;
-# system_cmd("cp ../$fasta ./");
-# if (-s "$id.ss"){
-# 	print "Looks like .aln file is already here.. skipping..\n";
-# }
-# else{
-# 	system_cmd(SCRATCH." $fasta $id 4");
-# }
-# chdir $outdir or confess $!;
-# confess "ERROR!! No ss file!! Scratch failed!\n" if not -f "$outdir/ss_sa/$id.ss";
-# confess "ERROR!! No acc file!! Scratch failed!\n" if not -f "$outdir/ss_sa/$id.acc";
-# system_cmd("cp $outdir/ss_sa/$fasta $outdir/ss_sa/$id.ss_sa");
-# system_cmd("echo \">$id\" > $outdir/ss_sa/$id.ss_sa");
-# system_cmd("echo \"".seq_fasta($fasta)."\" >> $outdir/ss_sa/$id.ss_sa");
-# system_cmd("tail -n 1 $outdir/ss_sa/$id.ss >> $outdir/ss_sa/$id.ss_sa");
-# system_cmd("tail -n 1 $outdir/ss_sa/$id.acc >> $outdir/ss_sa/$id.ss_sa");
-# system_cmd("sed -i 's/-/b/g' $outdir/ss_sa/$id.ss_sa");
-# print "Predicted SS and SA:\n";
-# system "cat $outdir/ss_sa/$id.ss_sa";
+####################################################################################################
+print "\n\n";
+print "Predicting secondary structure and solvent accessibility using SCRATCH..\n";
+system_cmd("mkdir -p $outdir/ss_sa");
+chdir $outdir."/ss_sa" or confess $!;
+system_cmd("cp ../$fasta ./");
+if (-s "$id.ss"){
+	print "Looks like .aln file is already here.. skipping..\n";
+}
+else{
+	system_cmd(SCRATCH." $fasta $id 4");
+}
+chdir $outdir or confess $!;
+confess "ERROR!! No ss file!! Scratch failed!\n" if not -f "$outdir/ss_sa/$id.ss";
+confess "ERROR!! No acc file!! Scratch failed!\n" if not -f "$outdir/ss_sa/$id.acc";
+system_cmd("cp $outdir/ss_sa/$fasta $outdir/ss_sa/$id.ss_sa");
+system_cmd("echo \">$id\" > $outdir/ss_sa/$id.ss_sa");
+system_cmd("echo \"".seq_fasta($fasta)."\" >> $outdir/ss_sa/$id.ss_sa");
+system_cmd("tail -n 1 $outdir/ss_sa/$id.ss >> $outdir/ss_sa/$id.ss_sa");
+system_cmd("tail -n 1 $outdir/ss_sa/$id.acc >> $outdir/ss_sa/$id.ss_sa");
+system_cmd("sed -i 's/-/b/g' $outdir/ss_sa/$id.ss_sa");
+print "Predicted SS and SA:\n";
+system "cat $outdir/ss_sa/$id.ss_sa";
 
-# ####################################################################################################
-# print "\n\n";
-# print "Predicting secondary structure and solvent accessibility using PSIPRED..\n";
-# system_cmd("mkdir -p $outdir/psipred");
-# chdir $outdir."/psipred" or confess $!;
-# system_cmd("echo \">$id\" > ./$id.fasta");
-# system_cmd("echo \"".seq_fasta("$outdir/$fasta")."\" >> ./$id.fasta");
-# if (-s "$id.solv"){
-# 	print "Looks like .solv file is already here.. skipping..\n";
-# }
-# else{
-# 	system_cmd(PSIPRED." $fasta");
-# }
-# chdir $outdir or confess $!;
+####################################################################################################
+print "\n\n";
+print "Predicting secondary structure and solvent accessibility using PSIPRED..\n";
+system_cmd("mkdir -p $outdir/psipred");
+chdir $outdir."/psipred" or confess $!;
+system_cmd("echo \">$id\" > ./$id.fasta");
+system_cmd("echo \"".seq_fasta("$outdir/$fasta")."\" >> ./$id.fasta");
+if (-s "$id.solv"){
+	print "Looks like .solv file is already here.. skipping..\n";
+}
+else{
+	system_cmd(PSIPRED." $fasta");
+}
+chdir $outdir or confess $!;
 
 ####################################################################################################
 print "\n\n";
